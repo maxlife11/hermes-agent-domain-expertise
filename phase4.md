@@ -1,96 +1,102 @@
-# Phase 4: Implementation Blueprint for Top Priority Niche
+# Phase 4 — Conditional Validation and Implementation Plan
 
-## Implementation Blueprint for #1: AI Contract Review & Obligation Extraction SaaS
+Updated: 2026-11-05. Status: proposed work; no jobs scheduled, outreach sent, integrations connected or agent deployed.
 
-### Objective
-Spin up a Hermes AI agent that becomes a domain expert in automated contract review within a 90-day plan, targeting the highest-priority niche from Phase 3.
+## Commit in stages
 
-### Initial Skill Seeding Strategy
+The initial contract-review SaaS winner and fixed build sequence are withdrawn. Begin with a two-week validation stage. The remaining 90-day outline is conditional on buyer, data, quality and economic evidence. The earlier $3,000/month budget and solo-founder assumptions are not confirmed operating constraints.
 
-**Day 1-7: Skill Creation**
-- Seed with 50 foundational legal documents (MSA, MSA, SOW, DPA, NDA) from public sources
-- Create "ContractReview" skill with:
-  - Clause taxonomy (12-15 categories: indemnification, limitation of liability, termination, payment terms, IP rights, confidentiality, governing law, etc.)
-  - Risk scoring rubric (low/medium/high impact)
-  - Output format for structured extraction
-- Seed memory with:
-  - Legal terminology dictionary
-  - User preferences and templates
-  - Industry-specific regulatory considerations
+Before spending or provisioning, establish available operator hours, budget, customer access, reviewer availability, jurisdiction, data restrictions and target time to revenue. Do not assume access to legal expertise, customer records or enterprise procurement.
 
-**Day 8-30: Core Loop Development**
-- Implement closed learning loop:
-  - Execute contract review tasks on seed documents
-  - Generate structured outputs
-  - Score performance against human expert baseline
-  - Refine skill based on feedback
-- Create supporting skills:
-  - "ClauseClassification"
-  - "RiskAssessment"
-  - "OutputFormatting"
+## Days 1–14: select a testable offer
 
-**Day 31-60: Data Integration & Expansion**
-- Integrate with external tools:
-  - DocuSign API for document access
-  - Contract management platforms
-  - Email/document storage systems
-- Collect additional training documents
-- Implement multi-agent workflow: DocumentIngestion → ClauseExtraction → RiskScoring → OutputGeneration
+| Window | Work and owner role | Deliverable | Gate |
+| --- | --- | --- | --- |
+| Days 1–2 | Operator defines constraints and evidence gaps | Constraint sheet and comparison of N01/N02/N03 | No invented buyer access or budget |
+| Days 3–5 | Operator conducts authorized buyer discovery; reviewer assesses sample scope | Proposed target: 5–8 relevant conversations, if reachable; objections and sample permissions recorded | Evidence of a recurring problem and a purchasing path |
+| Days 6–9 | Builder and reviewer prepare representative tasks and simple baseline | Proposed 30–50-case starter set, labeled development/held-out split, baseline costs | Reliable labels and affordable review |
+| Days 10–12 | Builder compares A and B from Phase 2 | Accepted sample deliverables, failures, costs and time including review | Hermes adds value or a simpler alternative is selected |
+| Days 13–14 | Operator evaluates a scoped paid pilot offer | Buyer response, price hypothesis, deliverable limits and go/no-go record | Concrete demand, manageable scope and plausible economics |
 
-**Day 61-90: Evaluation & Refinement**
-- Run benchmark evaluation on held-out contracts
-- Collect human expert feedback on outputs
-- Refine scoring and extraction models
-- Prepare for production deployment
+These quantities and dates are planning targets, not observed results or statistical guarantees. Obtain permission before outreach or handling nonpublic data. If buyer access takes longer, extend discovery or stop; do not treat the calendar as evidence.
 
-### Recurring Learning Jobs / Schedules
+Do not build multi-platform gateways, a marketplace, generic memory infrastructure or broad SaaS billing before proving the workflow needs them.
 
-| Schedule | Job | Description | Action |
-|----------|-----|-------------|--------|
-| Hourly | DocumentIngestion | Monitor for new contract uploads | Auto-trigger review workflow |
-| Daily | PerformanceReview | Analyze completed reviews, collect metrics | Refine skills, update memory |
-| Weekly | HumanFeedbackReview | Collect expert feedback | Adjust thresholds and classifications |
-| Monthly | RegulatoryUpdateCheck | Monitor legal/regulatory changes | Update compliance mapping |
+## Conditional days 15–90
 
-### Evaluation Metrics for Expertise Growth
+| Stage | Deliverables | Dependencies | Pass evidence | Stop or narrow when |
+| --- | --- | --- | --- | --- |
+| Days 15–30: assisted pilot | Pinned runtime/model, minimum integrations, reviewed skills, logs, scoped output | Data permission, buyer agreement, reviewer and budget | Buyer accepts useful work; major costs measured | Critical errors cannot be reviewed affordably or access fails |
+| Days 31–60: repeatability | Multiple batches, exception handling, cost accounting, optional C experiment | Continued demand and stable baseline | Repeated accepted delivery and improvement beyond B if C is pursued | Rework grows, margins remain negative, or learning regresses |
+| Days 61–90: productization decision | Standard onboarding, support limits, release/rollback process and acquisition results | Repeatable positive contribution and buyer continuation | Evidence supports scaling, a bounded managed service, or a narrow software product | Sales or delivery depends on unsustainable bespoke effort |
 
-1. **Accuracy Metrics**:
-   - Clause extraction precision/recall (>90% target)
-   - Risk scoring accuracy (agreement with human experts >80%)
-   - Entity/relationship extraction accuracy (>95%)
+Estimate effort and spend after the first sample: operator hours, reviewer hours, annotation effort, inference/API usage, integration work and fixed costs. Attach downside/base/upside estimates using Phase 3. Do not fill this plan with arbitrary costs before those inputs exist.
 
-2. **Operational Metrics**:
-   - Processing speed (target: >10 documents/hour)
-   - False positive/false negative rates
-   - User satisfaction scores (target: >4.5/5)
+## Minimum implementation specification
 
-3. **Learning Progress Metrics**:
-   - Skill refinement iterations completed
-   - Memory entries added per week
-   - Sub-agent task completion rates
+This is a proposed specification, not implemented code or verified Hermes configuration.
 
-### Monetization Path
+- One tenant-scoped agent profile and a pinned model/provider.
+- Versioned input schema, permitted source corpus and deterministic output validation.
+- Minimal authorized read tools; draft outputs by default.
+- Durable job IDs, idempotency controls, bounded retries and status records.
+- Source-linked outputs and reviewer decisions.
+- Evaluation harness with baseline conditions A/B/C and protected expected answers.
+- Release manifest: runtime commit/tag, model version, skill versions, data versions, evaluation results and reviewer approval.
+- Operational logs, per-job spend limits, kill switch and rollback to the previous approved skill release.
 
-**Phase 1 (Months 1-3)**: Freemium SaaS offering
-- Free: 3 documents/month
-- Pro: $99/month for unlimited documents
-- Enterprise: $5K-50K ACV for integration + compliance support
+Revalidate the selected Hermes release's features and tool permissions before implementing. No invented configuration keys or commands are provided here.
 
-**Phase 2 (Months 4-6)**: Vertical specialization
-- Healthcare-specific contract workflows
-- Tech-specific MSA templates
-- Real estate-specific lease workflows
+## Initial skill seeding
 
-**Phase 3 (Months 7-9)**: Platform integration
-- API for third-party integrations
-- Marketplace for specialized AI agents
-- Partner with legal tech platforms
+Seed the three narrow skills for the selected candidate from Phase 2 with reviewer-approved procedures and representative examples. Keep facts with sources and effective dates; keep personal preferences separate. Do not use a random document count as a proxy for coverage.
 
-**Phase 4 (Months 10-12)**: Expansion
-- AI-powered contract negotiation support
-- Automated compliance checking
-- International contract handling
+Each skill should specify trigger, input schema, scope, procedure, approved tools, output schema, evidence requirements, validators, failure modes and escalation. The first release remains fixed while the baseline is evaluated.
 
----
+## Proposed jobs, not activated schedules
 
-**Full report continues in next phase...
+| Trigger/cadence | Purpose | Output and gate | Cost control |
+| --- | --- | --- | --- |
+| Authorized new input | Execute the approved workflow | Validated draft or explicit escalation | Per-job tool, token, time and retry limits |
+| Daily during an active pilot | Summarize failures and review load | Metrics only; no automatic production skill changes | Aggregate existing logs rather than rereading all sources |
+| Weekly, if enough new evidence exists | Review error clusters and candidate changes | Development experiment; independent evaluation before promotion | Batch evaluations and stop low-value experiments |
+| Source version change | Detect potentially stale references | Revalidation task and affected-skill list | Monitor defined sources, not unrestricted browsing |
+| Approved release | Promote evaluated skills | Version manifest and rollback checkpoint | Bounded rollout and review |
+| Critical incident or budget breach | Suspend affected action | Incident record and human decision | Kill switch and limited diagnostics |
+
+A cadence does not create useful feedback. Skip jobs whose expected value is below their cost or that have no new evidence.
+
+## Sample operating charter
+
+- Objective: produce the selected workflow's accepted deliverable within buyer-defined quality, cost and time limits.
+- Inputs: only authorized sources and the minimum customer data needed.
+- Permitted actions: retrieve, analyze, validate and create drafts in designated locations.
+- Approval required: publication, merges, customer messages, reminders, contractual notices, production changes and any expanded access.
+- Excluded actions: autonomous professional determinations, payments and unsupported customer commitments.
+- Learning: propose changes in an isolated candidate version; do not modify production skills or approval rules.
+- Budget: enforce operator-approved per-job and period caps before execution. Values remain unset until approved.
+- Escalation: missing/conflicting evidence, critical ambiguity, permission failure, unfamiliar action or exceeded limits.
+- Completion: return evidence, validation status, unresolved issues and actual usage.
+- Recovery: stop, preserve permitted audit evidence, and restore the last approved release when directed.
+
+For N03, require reviewer approval of dates, notice conditions, amendment precedence and any proposed reminders. Initial scope excludes sending notices or deciding legal risk.
+
+## First three experiments
+
+| Experiment | Procedure | Proposed pass/fail rule |
+| --- | --- | --- |
+| Demand | Present a bounded sample and scoped offer to reachable relevant buyers | Pass with a paid pilot or concrete purchasing commitment and permitted task access; interest alone is inconclusive |
+| Delivery | Compare A and B on representative held-out tasks with independent review | Pass chosen workflow only if quality fits agreed limits and fully costed delivery supports the offered price; target net time saving set in advance |
+| Learning | Compare candidate C with frozen B, including annotation/evaluation costs | Promote only for predeclared held-out gains without critical regressions and with credible cost recovery over expected reuse |
+
+Experiments may fail. Preserve negative results and change the offer or method accordingly. Do not tune thresholds after seeing results to manufacture a pass.
+
+## Decision dashboard
+
+Track sampled cases and time period; accepted/rejected outputs; critical and noncritical errors; review and rework minutes; escalation precision/recall where labeled; tool failures; cost per accepted unit; contribution per customer; pilot conversion and continuation.
+
+Separate leading indicators from realized revenue and retention. Include a reason for every stage transition. Readiness is a documented evidence decision, not a date.
+
+## What completion would mean
+
+A credible milestone is one paying customer receiving a repeatable scoped deliverable with measured positive contribution and an affordable review process. A later milestone is controlled autonomy for specific actions supported by prospective evidence. Neither milestone currently exists in this repository.

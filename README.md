@@ -1,29 +1,56 @@
-# Hermes AI Agent Domain Expertise Research
+# Hermes Agent Domain Expertise — Evidence and Validation Plan
 
-This repository contains a comprehensive research report on how Hermes AI Agents can self-learn and evolve into true domain experts within specific digital business niches.
+Updated: 2026-11-05 (America/New_York). Status: **research hypotheses and proposed experiments; no validated business winner or deployed agent.**
 
-## Contents
+## Objective
 
-- **Phase 1**: Comprehensive list of 61+ profitable digital business niches (2025-2027 outlook)
-- **Phase 2**: Realistic self-learning pathways for Hermes agents
-- **Phase 3**: Prioritized shortlist of domain-expert niches with scoring
-- **Phase 4**: Implementation blueprint for the #1 recommended niche
+Find one narrow, repeatable digital workflow that customers will pay for, deliver it reliably, and test whether Hermes memory and reusable skills improve quality or reduce total delivery cost. Profitability and autonomous expertise are outcomes to demonstrate, not assumptions.
 
-## Key Findings
+## Current evidence
 
-1. **Top Priority Niche**: AI Contract Review & Obligation Extraction SaaS (Score: 4.7/5)
-2. **Market Size**: Global AI agent market ~$7.6B in 2025, projected to reach $182.9B by 2033
-3. **Self-Learning Timeline**: 0-3 months for junior expert, 3-9 months for solid expert, 9-18 months for top 10% expert
-4. **Go-to-Market Models**: Enterprise SaaS, vertical specialization, white-label solutions, hybrid human+agent consulting
+| Area | Completed | Still required |
+| --- | --- | --- |
+| Repository review | All six original Markdown files reviewed; arithmetic and completeness defects identified | External validation of commercial claims |
+| Opportunity design | 12 bounded workflow hypotheses; three candidates for initial discovery | Buyer access, task samples, purchasing evidence |
+| Learning design | Baselines, held-out evaluation, promotion and rollback plan | Implemented harness and observed learning gains |
+| Economics | Cost model and decision gates defined | Measured review/support effort, real pricing and retention |
+| Implementation | Conditional two-week and 90-day plan documented | Runtime configuration, integrations, pilots, deployment |
 
-## Research Methodology
+No customer interviews, paid pilots, benchmark runs, or business revenue are documented here. Documentation checks are not agent performance tests.
 
-This research is based on:
-- Market data from Grand View Research, MarketsandMarkets, Fortune Business Insights
-- Hermes agent architecture analysis from Nous Research
-- Real-world use cases from the Hermes agent community
-- Industry reports on digital business niches and AI agent adoption
+## Read the report
 
-## License
+1. [Phase 1 — Workflow hypotheses and evidence requirements](phase1.md)
+2. [Phase 2 — Controlled learning and bounded autonomy](phase2.md)
+3. [Phase 3 — Feasibility, prioritization and economics](phase3.md)
+4. [Phase 4 — Conditional validation and implementation plan](phase4.md)
+5. [Combined report](full_report.md), generated from the four phases
+6. [Evidence register](EVIDENCE.md)
+7. [Revision record and historical score audit](CHANGELOG.md)
 
-This research is provided for educational and strategic planning purposes.
+Edit the phase files, not the combined report. Run:
+
+```sh
+python3 scripts/build_report.py
+python3 scripts/build_report.py --check
+```
+
+The check verifies report synchronization and repository-local Markdown links. It does not validate market assertions or agent performance.
+
+## Corrections to the initial draft
+
+The original claimed 61+ niches but detailed ten before a placeholder. Its ranking weights summed to 105%; displayed scores were not reproducible. Its top-five narrative differed from its ranking. Numerical market, adoption, margin and expertise-timeline claims lacked claim-level sources.
+
+This revision withdraws the original winner designation, unsupported expert timelines, margin claims, and unlimited-document pricing. Historical text remains available in [the initial commit](https://github.com/maxlife11/hermes-agent-domain-expertise/tree/2a5ce196a88a1469ff3765bb2cf30257fd2102f6); the score audit is preserved in CHANGELOG.md. This is a replacement strategy, not a completed fresh market survey.
+
+## Next decision
+
+Compare buyer access and sample-task availability for API documentation maintenance, support knowledge-base maintenance, and contract renewal/notice extraction. Select one paid-pilot experiment only after feasibility checks. These are test candidates, not market rankings.
+
+The earlier chat's $3,000/month budget, solo-operator setup, target geography and 90-day commitment were planning assumptions, not confirmed user constraints. Confirm operating constraints before expenditure.
+
+## Boundaries
+
+Updating this repository authorizes documentation changes only. The schedules, outreach, integrations and deployments described here are proposals; none has been activated. Keep customer-confidential data, credentials and clinical records out of this repository.
+
+This repository contains research and planning material, not validated legal, medical, financial or underwriting services.

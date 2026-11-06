@@ -1,415 +1,407 @@
-# Hermes AI Agent Research Report
-## Phase 1: Profitable Digital Business Niches for AI Agents (2025-2027)
+# Hermes Agent Domain Expertise — Combined Report
 
-This report identifies 61+ digital business niches suitable for Hermes AI agents to become domain experts. The niches are grouped by category and include market attractiveness, profitability drivers, and required domain expertise.
+> Generated from phase1.md through phase4.md. Do not edit directly.
+> Run: python3 scripts/build_report.py
 
-### Category 1: SaaS & Micro-SaaS (10 niches)
-1. **AI-Powered Real Estate Valuation SaaS**: Cloud platform using AI agents trained on MLS data, property records, and market trends to generate automated comparative market analyses (CMAs) for real estate agents, investors, and brokers. Integrates with public record APIs and Zillow/Redfin data.
-   - Market attractiveness: Real estate software market ~$12.79B (2025), growing at ~12.2% CAGR. CMA/valuation sub-segment expanding rapidly as agents seek time-saving tools. AI-driven valuation tools seeing 40%+ YoY adoption growth among mid-market brokerages.
-   - Why profitable: SaaS subscription model with ~85-90% gross margins. Real estate agents willing to pay $50-200/month for tools that save hours per listing. Compounding: each new data source improves accuracy, raising switching costs.
-   - Key pain points requiring expertise: Understanding local MLS data schemas across 900+ regional MLSs; interpreting appraisal methodology (sales comparison approach, cost approach); knowing when AI valuations are legally defensible vs. when human appraiser review is required; handling data quality issues in inconsistent public records.
+Status: hypotheses and proposed validation; no validated business winner.
 
-2. **AI Contract Review & Obligation Extraction SaaS**: Legal-tech SaaS where AI agents read commercial contracts and extract key clauses, obligations, deadlines, and risk indicators, surfacing them in a structured dashboard. Targets procurement, legal ops, and contract managers.
-   - Market attractiveness: Legal tech market projected to exceed $40B by 2027 (Grand View Research). Contract intelligence alone is a $3-5B sub-segment growing at ~25% CAGR. Post-ChatGPT, AI legal tools saw a 300% increase in venture funding in 2023-2024.
-   - Why profitable: Enterprise SaaS with $5K-50K ACV; ~90% gross margins. High switching costs once the AI is trained on a company's specific contract templates and legal vocabulary. Data network effects: more contracts processed → better clause recognition.
-   - Key pain points requiring expertise: Legal terminology and contract structure (UCC, common law, jurisdiction-specific clauses); risk assessment heuristics (indemnification, limitation of liability, termination for convenience); knowing when to flag vs. ignore; understanding regulatory requirements for AI-assisted legal tools (jurisdiction-dependent).
+See [README](README.md), [evidence register](EVIDENCE.md) and [revision record](CHANGELOG.md).
 
-3. **AI Procurement & RFP Automation Platform**: AI agent system that auto-generates responses to requests for proposals (RFPs), builds supplier evaluation matrices, and drafts sourcing documents. Targets enterprise procurement teams and B2B SaaS companies issuing RFPs.
-   - Market attractiveness: Procurement software market ~$10B (2025), growing at ~12% CAGR. AI in procurement specifically is the fastest-growing sub-segment. Enterprises report spending 30-50% of procurement team time on repetitive RFP documentation.
-   - Why profitable: High-touch enterprise sales with $20K-100K+ ACV. ~85% gross margins. Compounding expertise: the agent learns a company's procurement policies, preferred suppliers, and evaluation criteria over time, creating sticky relationships. Data moat: proprietary templates and supplier databases.
-   - Key pain points requiring expertise: Procurement regulations (FAR, DFARS for government; EU procurement directives); supplier risk assessment frameworks; cost modeling and total cost of ownership calculations; RFP response structure and scoring methodology.
+# Phase 1 — Workflow Hypotheses and Evidence Requirements
 
-4. **AI-Driven Cybersecurity Threat Hunting SaaS**: AI agent that continuously monitors network telemetry, logs, and endpoint data to detect anomalous behavior patterns indicative of advanced persistent threats (APTs), reducing mean time to detect (MTTD) from days to minutes.
-   - Market attractiveness: Cybersecurity market ~$200B+ (2025), with AI/ML security tools growing at ~30% CAGR. The AI-driven security operations (SecOps) sub-market projected to exceed $30B by 2027. Ransomware incidents increased 74% YoY in 2024, driving demand.
-   - Why profitable: Enterprise SaaS with high ACV ($50K-500K+); ~88% gross margins. Regulatory compliance (SOC 2, HIPAA, PCI-DSS) creates mandatory purchase drivers. Compounding: more telemetry processed → better anomaly detection models → fewer false positives.
-   - Key pain points requiring expertise: Understanding attack kill chains (MITRE ATT&CK framework); distinguishing benign anomalies from genuine threats (reducing false positives); knowledge of industry-specific threat actors and TTPs (tactics, techniques, procedures); incident response procedures and escalation protocols.
+Updated: 2026-11-05. Status: discovery candidates; commercial demand unverified.
 
-5. **AI Financial Model Builder for Startups & VCs**: AI agent that converts natural-language business descriptions into financial models (3-statement projections, DCF, cap tables, scenario analysis), auto-generating pitch decks and investor updates. Targets founders, VCs, and startup accelerators.
-   - Market attractiveness: Fintech market ~$600B+ (2025); venture capital software tools sub-segment growing at ~18% CAGR. The average founder spends 40-80 hours building initial financial models. Y Combinator and similar accelerators report 5,000+ startups annually needing this tool.
-   - Why profitable: Freemium SaaS with upgrade to $99-499/month; ~92% gross margins. Compounding expertise: the agent learns industry-specific KPIs, benchmarks, and investor expectations across sectors. Network effects: models built by users train the system on real-world assumptions.
-   - Key pain points requiring expertise: Corporate finance theory (DCF, LBO, cap table math); startup-specific KPIs (CAC, LTV, NRR, burn multiple); investor pitch expectations by stage (seed vs. Series C); accounting standards (ASC 606, revenue recognition nuances).
+## Scope and correction
 
-6. **AI-Powered Clinical Trial Matching Platform**: AI agent that matches patients to clinical trials based on eligibility criteria, geographic proximity, and medical history, integrating with EHR systems and clinical trial registries (ClinicalTrials.gov).
-   - Market attractiveness: Clinical trial technology market ~$8B (2025), growing at ~14% CAGR. Patient recruitment accounts for ~30% of trial costs and 40%+ of trial delays. AI matching tools have shown 30-50% improvement in recruitment speed in published studies.
-   - Why profitable: B2B to pharmaceutical companies and CROs (contract research organizations); $50K-500K+ ACV. Regulatory moat: HIPAA compliance, FDA guidance alignment. Compounding expertise: more matches → better matching algorithms → stronger value proposition.
-   - Key pain points requiring expertise: Clinical trial protocol design and inclusion/exclusion criteria interpretation; ICD-10 and SNOMED medical coding; FDA guidance on decentralized clinical trials; IRB (Institutional Review Board) requirements and patient privacy regulations.
+The initial report asserted 61+ niches but described ten and left the remaining categories as a placeholder. This revision deliberately replaces that breadth target with 12 specific workflow hypotheses. It does not claim exhaustive market coverage or newly validated TAM estimates.
 
-7. **AI Compliance & Regulatory Change Management SaaS**: AI agent that monitors regulatory feeds (SEC, FDA, EU AI Act, GDPR updates), identifies changes relevant to a company's jurisdiction and industry, and drafts compliance impact assessments and policy updates automatically.
-   - Market attractiveness: RegTech market ~$15B (2025), growing at ~20% CAGR. The EU AI Act alone affects 85% of EU-based companies. Regulatory change management is a $3-5B sub-segment with strong enterprise demand.
-   - Why profitable: Enterprise SaaS with $20K-200K ACV; ~90% gross margins. High switching costs from regulatory vocabulary and industry-specific mapping. Compounding: continuous regulatory monitoring creates a data moat that's hard to replicate.
-   - Key pain points requiring expertise: Regulatory frameworks across jurisdictions (SEC, FDA, CFTC, GDPR, EU AI Act, CCPA); industry-specific compliance regimes (SOX, HIPAA, PCI-DSS, MiCA); legal interpretation of regulatory language; policy drafting and governance committee communication.
+Define an opportunity as **buyer + recurring problem + bounded workflow + measurable deliverable + payment hypothesis**. A parent industry's size is not the service's accessible market. Large budgets do not establish access to buyers, data or procurement approval.
 
-8. **AI Meeting Transcription & Decision-Making SaaS**: AI agent that records, transcribes, and analyzes internal meetings (board meetings, sales calls, product reviews), extracting decisions, action items, follow-ups, and sentiment analysis, then automatically creating tickets, calendar events, and status reports.
-   - Market attractiveness: Meeting intelligence market ~$2B (2025), growing at ~25% CAGR. Post-pandemic hybrid work has made meeting documentation a $10B+ productivity problem. Enterprise adoption of meeting transcription tools increased 300% from 2020-2024.
-   - Why profitable: Freemium SaaS with viral B2B2C distribution (team-level adoption); ~90% gross margins. Compounding expertise: learning industry-specific meeting vocabulary, decision patterns, and action item formats across companies.
-   - Key pain points requiring expertise: Meeting dynamics and conversational flow analysis; distinguishing decisions from discussions; identifying implicit action items and accountability; cross-referencing with existing project management tools (Jira, Asana, Notion); handling confidential board-level discussions with appropriate security.
+The original 2025–2027 outlook is not a verified forecast. Future research must distinguish historical observations, current offers, and forecasts, retaining source dates and uncertainty.
 
-9. **AI-Powered Insurance Underwriting Automation**: AI agent that assesses risk for commercial insurance policies by analyzing applicant data (financial statements, claims history, sensor data, public records) and generating underwriting recommendations, premium quotes, and risk assessments.
-   - Market attractiveness: InsurTech market ~$15B (2025), growing at ~25% CAGR. AI underwriting tools can reduce underwriting time by 60-80% and improve loss ratio by 5-10 percentage points. Commercial lines (P&C, professional liability) represent the largest addressable sub-segment.
-   - Why profitable: B2B to insurance carriers and MGAs (managing general agents); commission-based revenue model (5-15% of premium); ~85% gross margins. Compounding expertise: proprietary risk models trained on historical claims data create an underwriting moat.
-   - Key pain points requiring expertise: Actuarial science and risk modeling; insurance policy language and coverage interpretation; regulatory requirements by state/country (NAIC, Lloyd's, EU Solvency II); fraud detection patterns; reinsurance structuring.
+## Candidate inventory
 
-10. **AI ESG & Sustainability Reporting Automation**: AI agent that ingests company data (energy usage, supply chain, emissions, diversity metrics) and automatically generates ESG reports (GRI, SASB, TCFD, CSRD compliant), identifies sustainability gaps, and recommends improvement actions.
-    - Market attractiveness: ESG tech market ~$5B (2025), growing at ~30% CAGR. The EU CSRD affects 50,000+ companies. The SEC's climate disclosure rule affects 10,000+ US companies. ESG reporting is a $20B+ compliance burden globally.
-    - Why profitable: Enterprise SaaS with $30K-300K ACV; ~88% gross margins. Regulatory tailwinds create recurring demand. Compounding expertise: evolving ESG frameworks and reporting standards create a natural moat — staying current requires continuous learning.
-    - Key pain points requiring expertise: GRI, SASB, TCFD, CSRD, and ISSB reporting frameworks; Scope 1/2/3 emissions calculation methodologies; supply chain sustainability assessment; carbon accounting standards (GHG Protocol); stakeholder materiality assessments.
+All commercial propositions below have **unverified** confidence. Mechanistic reasons to test a workflow are design judgments, not proof of demand. IDs remain stable across phases.
 
-### Category 2: Content, Media & Creative (6 niches)
-... [continues with remaining categories] ...
+| ID | Buyer and problem | Narrow deliverable and value hypothesis | Required access and evaluation | Principal obstacle |
+| --- | --- | --- | --- | --- |
+| N01 | Developer-tools company; docs drift after API releases | Source-linked drift report, tested examples and draft documentation PR | Authorized repository/specification, docs, test environment; maintainer acceptance and example execution | Existing tooling may solve enough of the problem; reviewer burden may erase savings |
+| N02 | SaaS support lead; resolved issues fail to reach the knowledge base | Draft article updates linked to resolved tickets and approved product facts | Authorized, minimized tickets and KB; blinded editor review and measured editing time | Privacy, conflicting answers, weak incremental willingness to pay |
+| N03 | Operations/procurement lead; renewal and notice dates are scattered | Reviewed register of dates, conditions, notice methods and source passages | Authorized contracts and qualified reviewer; exact field correctness and critical-miss analysis | Amendments, ambiguous dates and missed obligations |
+| N04 | B2B sales engineering lead; repetitive questionnaires | Draft responses supported only by approved evidence, with unresolved gaps flagged | Current approved answer library; evidence validity and reviewer acceptance | Confidentiality and unsupported commitments |
+| N05 | E-commerce operations lead; inconsistent product catalogs | Detect attribute, variant and policy mismatches; propose a correction queue | Authorized catalog exports and platform rules; item-level correctness | Integration variability and low value per correction |
+| N06 | Agency analytics lead; tracking failures undermine reporting | Read-only event/schema checks and a prioritized issue report | Test events, authorized analytics access and expected event specification | Establishing ground truth and attributing business value |
+| N07 | Customer-success operations lead; account records are incomplete | Source-backed reconciliation suggestions and duplicate review queue | CRM exports and approved matching rules; false-merge and correction rates | Incorrect merges, stale data and permissions |
+| N08 | Finance operations lead; invoices conflict with approved orders | Exception packets with matched fields, discrepancies and evidence | Authorized invoice/order data; exact reconciliation and reviewer time | Sensitive data and costly matching errors; no autonomous payments |
+| N09 | Real-estate brokerage operations lead; listing data is inconsistent | Listing QA against supplied source documents and brokerage rules | Licensed data and reviewer; field accuracy and compliance with supplied rules | Data rights and local variation; excludes autonomous valuation |
+| N10 | Compliance operations lead; relevant source changes are missed | Dated source-change digest with citations and reviewer routing | Defined official sources and reviewer-owned relevance rules | Coverage gaps and interpretation burden; excludes compliance determinations |
+| N11 | B2B product-marketing lead; competitive changes are hard to track | Evidence-linked pricing/feature changes and draft sales-enablement updates | Permitted public sources and dated snapshots; factual change verification | Public information may be easy to replicate and hard to monetize |
+| N12 | SaaS support operations lead; escalations lack reproducible context | Structured reproduction/evidence packets for engineering triage | Authorized tickets, logs and isolated repro environment; engineer acceptance | Secrets in logs, unreliable reproduction and environment drift |
 
-# Phase 2: Realistic Self-Learning Pathways for Hermes Agents
+## Initial discovery set
 
-## Introduction to Hermes Self-Learning Capabilities
+Investigate N01, N02 and N03 first because their deliverables can be inspected and kept under review. This is a proposed test order, not a claim that they are the three most profitable niches.
 
-Hermes AI agents are open-source, self-improving agents with persistent memory, skill creation/learning loops, and multi-platform gateways. They operate in closed learning loops that enable them to:
+| Candidate | First proof to obtain | Initial boundary | What would disqualify it |
+| --- | --- | --- | --- |
+| N01 | A maintainer provides actual drift examples and evaluates a sample | Draft PR only; no merge or release authority | Existing checks deliver comparable results at lower total cost |
+| N02 | A support lead provides authorized sample tickets and measures editing effort | Draft articles; no publishing or customer replies | Review effort equals or exceeds manual authoring |
+| N03 | A buyer and qualified reviewer provide representative contracts | Extract and cite; reviewer approves register and reminders | Critical omissions remain hard to detect affordably |
 
-1. Create reusable skills from completed tasks
-2. Refine skills over time through iterative learning
-3. Maintain persistent memory across sessions (MEMORY.md, USER.md)
-4. Schedule recurring work and spawn sub-agents
-5. Compound knowledge through continuous data collection and processing
+Buyer access can change this order. No access advantage has been established in this repository.
 
-## Skill Creation and Learning Loop
+## Treatment of the original broad opportunities
 
-### 1. Skill Creation from Completed Tasks
-Hermes agents analyze completed tasks to identify reusable patterns and create skills that can be invoked in the future. For example, after successfully completing a real estate valuation task, the agent creates a "RealEstateValuation" skill that can be reused for similar tasks.
+Retain the original ideas as historical leads, not recommendations. General contract review, autonomous property valuation, insurance underwriting, clinical trial matching and diagnosis support require evidence and controls beyond the initial pilot scope. Procurement response work is narrowed to N04, regulatory monitoring to N10, real-estate operations to N09, and contract operations to N03.
 
-### 2. Skill Refinement Over Time
-Skills are continuously refined through:
-- Performance feedback from multiple executions
-- User feedback and ratings
-- Comparison with human expert performance
-- Statistical analysis of outcomes
+Financial modeling, cybersecurity threat hunting, ESG reporting, meeting intelligence, advertising optimization, churn prediction, logistics, smart-home energy, recruitment, moderation, agricultural detection and legal document generation are deferred rather than declared unprofitable. Their source access, buyer economics and error exposure have not been adequately investigated. Historical descriptions are preserved in the initial commit linked from README.md.
 
-### 3. Persistent Memory Systems
-Hermes agents maintain persistent memory through:
-- MEMORY.md files that store key learnings
-- USER.md files that track user preferences and interactions
-- Database-backed memory systems for larger datasets
+## Evidence required before selection
 
-### 4. Recurring Work and Scheduling
-Agents can schedule recurring tasks using cron-like syntax or event-based triggers:
-- Daily monitoring of competitor websites
-- Weekly analysis of market reports
-- Monthly financial reviews
-- Real-time monitoring of specific data sources
+For each finalist record:
 
-### 5. Sub-Agent Spawning
-Hermes can spawn sub-agents for specialized tasks, allowing parallel processing and specialization:
-- A data collection sub-agent
-- An analysis sub-agent
-- A reporting sub-agent
-- A feedback collection sub-agent
+- Named buyer role, purchasing trigger, existing workaround, frequency and actual time/cost burden.
+- Reachable acquisition channel and observed purchasing process, not an assumed enterprise sales motion.
+- Permitted representative data, independent reviewers and labels, including difficult cases.
+- Specific competing offers and dated prices; advertised pricing is not evidence of realized sales.
+- A testable scoped offer and a concrete buying signal. Distinguish interview interest, trial use, payment, renewal and retention.
+- Delivery costs including onboarding, review, exceptions, support and acquisition.
+- Two independent evidence sources where available, including direct buyer evidence; multiple summaries of one study count as one source.
+- Contradictory evidence, freshness requirements and the next cheapest uncertainty-reducing test.
 
-## Learning Pathways for Domain Expertise
-
-### 1. Junior Expert (0-3 months)
-- **Goal**: Learn basic domain concepts and perform simple tasks
-- **Activities**:
-  - Read industry reports and whitepapers
-  - Analyze public datasets
-  - Complete basic tasks with human oversight
-  - Create initial skills from simple workflows
-  - Maintain basic memory of domain concepts
-
-### 2. Solid Expert (3-9 months)
-- **Goal**: Perform complex tasks independently with minimal supervision
-- **Activities**:
-  - Monitor industry trends continuously
-  - Analyze proprietary data sources
-  - Create specialized skills for niche applications
-  - Implement feedback loops for continuous improvement
-  - Develop sub-agents for specialized functions
-  - Achieve high accuracy in domain-specific tasks
-
-### 3. Top 10% Expert (9-18 months)
-- **Goal**: Become a recognized domain expert with proprietary knowledge
-- **Activities**:
-  - Build large proprietary datasets
-  - Develop advanced skills with high precision
-  - Create industry-specific frameworks and methodologies
-  - Publish thought leadership content
-  - Mentor junior agents or human users
-  - Achieve near-human performance with consistent reliability
-
-## Learning Mechanisms
-
-### Data Collection
-- Web scraping from industry publications and news sites
-- API integration with CRM, ERP, and analytics platforms
-- Direct data collection from user inputs and feedback
-- Integration with public datasets and open data portals
-
-### Analysis Techniques
-- Statistical analysis of trends and patterns
-- Machine learning model training on collected data
-- Natural language processing for qualitative data
-- Comparative analysis with historical data
-
-### Feedback Integration
-- User feedback ratings and comments
-- Performance metrics from task execution
-- Error analysis and correction mechanisms
-- Continuous learning from failure cases
-
-## Timeline Estimates
-
-| Expertise Level | Time Required | Key Milestones |
-|-----------------|---------------|----------------|
-| Junior Expert | 0-3 months | Basic domain knowledge, simple task execution, initial skill creation |
-| Solid Expert | 3-9 months | Complex task execution, specialized skills, feedback integration |
-| Top 10% Expert | 9-18 months | Proprietary knowledge, industry frameworks, mentoring capabilities |
-
-## Limitations and Failure Modes
-
-### What Hermes Agents Still Need Humans For:
-- High-level strategic decision making
-- Ethical and regulatory compliance oversight
-- Creative innovation beyond pattern recognition
-- Handling novel situations without historical precedent
-- Emotional intelligence and human relationship management
-
-### Common Failure Modes:
-- Data quality issues leading to incorrect conclusions
-- Lack of domain-specific context causing misinterpretation
-- Overfitting to specific datasets without generalization
-- Regulatory changes outpacing learning capabilities
-- Security vulnerabilities in autonomous operation
-
-## Concrete Skill Examples
-
-### Real Estate Agent Example:
-- **Initial Skill**: Basic property valuation using public records
-- **Refined Skill**: AI valuation with local market adjustments and seasonality analysis
-- **Expert Skill**: Comprehensive valuation including foot traffic, school districts, and economic indicators
-
-### Legal Agent Example:
-- **Initial Skill**: Contract clause extraction from PDFs
-- **Refined Skill**: Context-aware clause classification with risk scoring
-- **Expert Skill**: Automated contract negotiation support with precedent-based recommendations
+Use [EVIDENCE.md](EVIDENCE.md) for provenance. Do not populate unknown fields with invented numbers. Collect no customer-sensitive data without explicit permission and an appropriate handling agreement.
 
 ---
 
-The full report continues in Phase 3...# Phase 3: Prioritized Shortlist of Domain-Expert Niches
+# Phase 2 — Controlled Learning and Bounded Autonomy
 
-## Scoring Methodology
+Updated: 2026-11-05. Status: proposed architecture; no runtime or expertise benchmark completed.
 
-We prioritized 20 promising digital business niches using a transparent scoring system with the following weights:
+## Verified capability versus business claim
 
-| Criterion | Weight | Description |
-|-----------|--------|-------------|
-| Profit potential / willingness-to-pay | 30% | High-margin, high-ticket potential, recurring revenue models | 
-| Suitability for Hermes self-learning | 25% | Memory and skill compounding potential, domain stability | 
-| Time-to-expertise | 15% | How quickly an agent can become valuable | 
-| Scalability & productization potential | 15% | Potential for skill packs, SaaS wrappers, consulting | 
-| Competition / barrier to entry | 10% | Gap between pure human expert vs AI-augmented | 
-| Data accessibility & tools | 5% | Availability of public/semi-public data, APIs | 
-| Risk / regulatory considerations | 5% | Compliance requirements, ethical concerns |
+Official documentation checked during the review describes the capabilities below. The project has not pinned and tested an upstream release. Verify each dependency against the selected release before implementation; documentation support does not prove production reliability.
 
-Each niche received scores 1-5 for each criterion, weighted, and totaled to produce an overall priority score.
+| Capability | Documentation support | What remains to build or verify |
+| --- | --- | --- |
+| Agent-managed skills | [Skills system](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills/) describes reusable procedures and create/update operations | Domain procedures, test cases and an independent promotion decision |
+| Skill-write staging | The same reference describes approval-gated skill writes | Version-specific configuration and enforcement; approval alone is not an evaluation harness |
+| Persistent facts | [Memory](https://hermes-agent.nousresearch.com/docs/user-guide/features/memory) describes bounded MEMORY.md/USER.md-style memory | Retrieval quality, freshness rules and tenant isolation |
+| Scheduling, tools and delegation | [Official overview](https://hermes-agent.nousresearch.com/docs) describes cron, tools, MCP and isolated subagents | Authenticated integrations, permissions, failure recovery and measured costs |
+| Model flexibility | Official overview describes provider flexibility | Benchmark every model/version change; portability does not imply equal quality |
+| Learning from outcomes | Skills can retain procedures and corrections | Reliable outcome labels and proof of improvement on unseen tasks |
+| Model-weight training | Not established by the ordinary memory/skill loop | Any separate training pipeline needs its own data, permissions, compute and evaluation |
 
-## Top 20 Prioritized Niches
+Reading documents, retrieving context, changing a procedure, and training model weights are different operations. More memory does not automatically mean more expertise.
 
-Below are the top 20 niches with their scores and brief justification:
+## Operational stages
 
-| Rank | Niche | Overall Score | Profit Potential | Self-Learning Fit | Time-to-Expertise | Scalability | Competition | Data Access | Risk | Key Justification |
-|------|-------|---------------|------------------|-------------------|-------------------|-------------|-------------|-------------|------|-------------------|
-| 1 | **AI Contract Review & Obligation Extraction SaaS** | 4.7 | 5 | 4 | 4 | 5 | 3 | 4 | 3 | High-margin enterprise SaaS with clear data availability and strong switching costs |
-| 2 | **AI-Powered Real Estate Valuation SaaS** | 4.6 | 5 | 4 | 3 | 5 | 4 | 5 | 4 | Large market, high data availability, strong regulatory moat |
-| 3 | **AI Compliance & Regulatory Change Management** | 4.5 | 4 | 5 | 4 | 4 | 2 | 3 | 2 | Exceptional self-learning fit due to continuous regulatory updates |
-| 4 | **AI Financial Model Builder for Startups & VCs** | 4.4 | 5 | 4 | 3 | 4 | 3 | 4 | 3 | High willingness-to-pay from startup ecosystem, data rich environment |
-| 5 | **AI Clinical Trial Matching Platform** | 4.3 | 4 | 4 | 4 | 4 | 3 | 3 | 4 | High-impact domain with clear compliance requirements |
-| 6 | **AI-Powered Insurance Underwriting Automation** | 4.2 | 4 | 4 | 4 | 3 | 3 | 4 | 4 | High compliance requirements create barrier to entry |
-| 7 | **AI ESG & Sustainability Reporting Automation** | 4.2 | 4 | 4 | 4 | 4 | 2 | 3 | 2 | Strong regulatory tailwinds, data accessible, limited competition |
-| 8 | **AI Technical Documentation Generator for Engineering Teams** | 4.1 | 4 | 4 | 4 | 3 | 3 | 5 | 3 | Developer tooling market growing rapidly, clear use case |
-| 9 | **AI-Powered Digital Marketing Campaign Optimization** | 4.0 | 4 | 3 | 3 | 4 | 3 | 4 | 4 | High marketing spend, automation potential, competition increasing |
-| 10 | **AI Meeting Transcription & Decision-Making SaaS** | 3.9 | 4 | 3 | 4 | 3 | 4 | 4 | 4 | Post-pandemic demand, clear workflow automation |
-| 11 | **AI Customer Analytics & Churn Prediction Agent** | 3.8 | 4 | 4 | 3 | 3 | 3 | 4 | 4 | High impact on SaaS businesses, clear data sources |
-| 12 | **AI B2B Lead Generation & Sales Outreach Automation** | 3.7 | 4 | 3 | 3 | 4 | 4 | 3 | 4 | Large enterprise market, ongoing need for lead generation |
-| 13 | **AI Supply Chain & Logistics Optimization** | 3.7 | 4 | 3 | 4 | 3 | 3 | 3 | 5 | Complex domain with clear automation opportunities |
-| 14 | **AI Healthcare AI-Triage & Diagnosis Support** | 3.6 | 4 | 4 | 4 | 3 | 2 | 2 | 5 | High regulatory barrier but significant market opportunity |
-| 15 | **AI Legal Research & Case Analysis Agent** | 3.5 | 4 | 3 | 3 | 3 | 3 | 3 | 5 | High-value domain with clear need for speed and efficiency |
-| 16 | **AI Smart Home Energy Management** | 3.5 | 3 | 4 | 4 | 3 | 4 | 4 | 3 | Consumer adoption growing, clear technical requirements |
-| 17 | **AI Talent Acquisition & Recruitment Automation** | 3.4 | 3 | 3 | 4 | 3 | 4 | 3 | 4 | High-volume, repetitive tasks suitable for automation |
-| 18 | **AI Content Moderation & Community Management** | 3.3 | 3 | 3 | 3 | 4 | 5 | 3 | 5 | Strong regulatory pressure, high volume, challenging domain |
-| 19 | **AI Agricultural Disease Detection & Crop Monitoring** | 3.2 | 3 | 4 | 4 | 3 | 3 | 4 | 4 | Critical need for food security, data-rich domain |
-| 20 | **AI Legal Document Automation & Generation** | 3.1 | 3 | 3 | 3 | 3 | 3 | 4 | 5 | Regulatory compliance required, high adoption potential |
+Replace calendar-based expert labels with evidence-based stages. No top-decile claim or fixed time-to-expertise estimate is justified.
 
----
+| Stage | Required evidence | Permitted operation |
+| --- | --- | --- |
+| Assisted operator | Useful outputs on representative tasks with errors identified by a reviewer | Read-only work and drafts |
+| Reliable specialist | Repeated held-out performance within buyer-approved error and cost limits | Continued reviewed delivery; limited low-consequence actions may be considered |
+| Bounded autonomous operator | Stable prospective results, tested exception handling, audit logs and rollback | Only specifically approved actions within explicit limits |
 
-## Top 5 Highest Priority Recommendations
+Elapsed time depends on sample availability, feedback delay, integration complexity and failure severity. Passing a small pilot is not evidence of broad autonomy or expertise in an entire profession.
 
-Based on the scoring analysis, these 5 niches represent the best opportunities for Hermes AI agents to achieve domain expertise quickly while addressing significant market needs:
+## Minimal architecture
 
-### 1. AI Contract Review & Obligation Extraction SaaS
-**Rationale**: Highest overall score driven by strong profit potential, excellent self-learning fit, and clear data availability. The legal tech market is growing rapidly, and AI can significantly reduce manual review time while maintaining compliance.
+Start with one Hermes profile, a pinned model/provider, narrow tools, deterministic validators and a reviewer. Add subagents only if a controlled comparison shows a net quality, latency or cost advantage.
 
-**Go-to-Market Models**:
-- **Enterprise SaaS**: $5K-50K ACV, subscription-based with tiered features
-- **Vertical Specialization**: Industry-specific contract templates (healthcare, tech, real estate)
-- **Hybrid Human+Agent**: AI screening with human review for high-stakes contracts
-- **White-label Solution**: Offer to legal tech platforms and law firms
+| Layer | Responsibility | Boundary |
+| --- | --- | --- |
+| Notion | Approved decisions, evidence summaries, project state and source links | Curated shared knowledge; not the runtime queue or credential store |
+| GitHub | Versioned skills, schemas, evaluation code and release manifests | No credentials or customer-confidential artifacts |
+| Operational storage | Job state, permitted source artifacts, outputs and audit events | Tenant-scoped access, retention and deletion rules |
+| Hermes memory | Compact contextual facts and pointers | Curated and scoped; not an ever-growing domain corpus |
+| Retrieval corpus | Versioned permitted references with source and effective dates | Untrusted content cannot grant permissions or override operating rules |
+| Evaluation/promotion service | Evaluate candidate skill changes and release approved versions | Separate authority from the agent proposing the change |
 
-### 2. AI-Powered Real Estate Valuation SaaS
-**Rationale**: Strong market size, high data availability, and clear regulatory advantages. Real estate agents and investors need faster, more accurate valuations.
+The official memory reference warns against multiple agent processes sharing a Hermes home. Use separate profiles and explicit shared-memory access. Do not assume this alone provides a complete multi-tenant security boundary.
 
-**Go-to-Market Models**:
-- **Agent-Centric Platform**: Marketplace for specialized valuation agents
-- **Regional Specialization**: Local market agents with neighborhood-level insights
-- **Enterprise Integration**: API integration with MLS systems and property management platforms
-- **Consumer Mobile App**: Direct-to-consumer property valuation with shareable reports
+## Controlled improvement loop
 
-### 3G. AI Compliance & Regulatory Change Management
-**Rationale**: Excellent self-learning fit due to continuous regulatory updates. High switching costs and strong compliance requirements create sustainable moats.
+1. Record the task, source versions, output, model/tool versions, elapsed time, costs and reviewer corrections.
+2. Classify the error: retrieval, source quality, reasoning, tool execution, formatting or scope.
+3. Propose the smallest relevant skill change. An unsolved task does not automatically require another agent or more memory.
+4. Test the candidate in isolation on development cases.
+5. Compare with the incumbent on held-out cases and regressions.
+6. Promote only when predeclared quality, cost and safety criteria pass and authorized review approves.
+7. Version the release; record its evidence and rollout boundary.
+8. Monitor prospective tasks. Revert or suspend actions when critical errors, unauthorized actions, cost overruns or drift exceed agreed limits.
 
-**Go-to-Market Models**:
-- **Regulatory Monitoring Service**: Continuous compliance monitoring for enterprises
-- **Industry-Specific Solutions**: Tailored to healthcare, finance, tech, and other regulated sectors
-- **API Integration**: Connect to existing compliance systems and workflows
-- **Consulting Services**: Advisory services backed by AI analysis
+Production skills remain fixed between releases. Outcome collection may run regularly; self-modification of production is not the default. Separate source facts from experimental lessons and approved operating procedures.
 
-### 4. AI Clinical Trial Matching Platform
-**Rationale**: High regulatory barrier but significant social impact and market opportunity. Clear data sources from clinical trial registries and healthcare systems.
+## Baselines and attribution
 
-**Go-to-Market Models**:
-- **SaaS Platform**: For pharmaceutical companies and CROs
-- **Hospital System Integration**: Direct patient matching within EHR systems
-- **Research Institution Partnership**: Collaboration with academic medical centers
-- **Regulatory Compliance Service**: FDA-compliant matching with audit trails
+Compare three conditions on the same representative task distribution:
 
-### 5. AI-Powered Insurance Underwriting Automation
-**Rationale**: High compliance requirements create barriers to entry, but the cost savings opportunity is substantial. Strong data availability from claims and underwriting systems.
+- A: simplest viable script or general assistant.
+- B: Hermes with fixed, reviewed skills.
+- C: the same Hermes setup with candidate skill updates.
 
-**Go-to-Market Models**:
-- **Carrier-Specific Solutions**: Custom underwriting for major insurance providers
-- **Product-Specific Platforms**: Specialized underwriting for different insurance lines (P&C, health, commercial)
-- **Risk Consulting Services**: Advisory services backed by AI underwriting decisions
-- **Regulatory Technology**: Compliance and reporting automation for insurers
+Hold model version, tools, source access and spending limits comparable. Record any unavoidable differences. Count the cost of proposing and evaluating changes in C. A stronger replacement model is not evidence that the memory loop learned.
 
----
+Choose the simplest condition meeting buyer requirements at the lowest total cost. A profitable B can be worth deploying even if C adds no value.
 
-## Summary Table of Prioritized List
+## Evaluation protocol
 
-| Rank | Niche | Overall Score | Market Size | Key Success Factors |
-|------|-------|---------------|-------------|---------------------|
-| 1 | AI Contract Review & Obligation Extraction SaaS | 4.7 | $40B legal tech (2027) | High margins, data-rich, switching costs |
-| 2 | AI Real Estate Valuation SaaS | 4.6 | $12.8B real estate tech (2025) | Data availability, regulatory advantages |
-| 3 | AI Compliance & Regulatory Change Management | 4.5 | $15B RegTech (2025) | Self-learning fit, compliance moat |
-| 4 | AI Financial Model Builder for Startups | 4.4 | $600B+ fintech (2025) | Startup ecosystem demand, data rich |
-| 5 | AI Clinical Trial Matching Platform | 4.3 | $8B clinical tech (2025) | Clear compliance, high impact |
-| 6 | AI Insurance Underwriting Automation | 4.2 | $15B InsurTech (2025) | Regulatory barriers, high savings |
-| 7 | AI ESG & Sustainability Reporting | 4.2 | $5B ESG tech (2025) | Regulatory tailwinds, data accessible |
-| 8 | AI Technical Documentation Generator | 4.1 | $20B developer tools (2025) | Developer tools growth, clear use case |
-| 9 | AI Digital Marketing Campaign Optimization | 4.0 | $70B ad tech (2025) | Marketing spend, automation opportunities |
-| 10 | AI Meeting Transcription & Decision-Making | 3.9 | $2B meeting intelligence (2025) | Post-pandemic demand, workflow automation |
-| 11 | AI Customer Analytics & Churn Prediction | 3.8 | $8B customer analytics (2025) | SaaS impact, data available |
-| 12 | AI B2B Lead Generation & Sales Outreach | 3.7 | $15B demand gen (2025) | Enterprise need, automation potential |
-| 13 | AI Supply Chain & Logistics Optimization | 3.7 | $3B logistics tech (2025) | Complex domain, clear automation |
-| 14 | AI Healthcare AI-Triage & Diagnosis Support | 3.6 | $8B healthcare AI (2025) | High regulatory barrier, significant need |
-| 15 | AI Legal Research & Case Analysis | 3.5 | $40B legal tech (2027) | High-value domain, efficiency driver |
-| 16 | AI Smart Home Energy Management | 3.5 | $4B smart home (2025) | Consumer adoption, technical requirements |
-| 17 | AI Talent Acquisition & Recruitment Automation | 3.4 | $13B HR tech (2025) | High-volume tasks, suitable for automation |
-| 18 | AI Content Moderation & Community Management | 3.3 | $15B social tech (2025) | Regulatory pressure, high volume |
-| 19 | AI Agricultural Disease Detection & Crop Monitoring | 3.2 | $4B agri-tech (2025) | Food security need, data-rich domain |
-| 20 | AI Legal Document Automation & Generation | 3.1 | $40B legal tech (2027) | Compliance required, adoption potential |
+Create evaluation cases before iterative skill development. For the first workflow, a proposed starter set is 30–50 varied cases; actual size must follow variation, failure severity and affordable independent review. This is not enough by itself to establish rare-event reliability.
+
+- Separate development and held-out sets; keep expected held-out answers out of agent-accessible memory and skill references.
+- Split by customer, template family, product version or time when near-duplicates could leak answers.
+- Include missing, conflicting, ambiguous, malformed and out-of-scope inputs.
+- Record sample sizes, denominators, reviewer disagreements and uncertainty; do not report percentage accuracy without its basis.
+- Keep a final untouched set or refresh it when repeated testing overfits the development process.
+- Use independent reviewers where feasible. The agent's confidence and self-grade are not ground truth.
+- Verify citations actually support the extracted claim, not merely that a URL exists.
+- Distinguish retrospective evaluation from prospective production monitoring.
+
+| Dimension | Measure |
+| --- | --- |
+| Quality | Field-level correctness; accepted deliverables; unsupported assertions; critical omissions |
+| Efficiency | End-to-end completion time including reviewer and rework time |
+| Economics | Fully costed delivery and contribution profit per accepted unit |
+| Reliability | Tool failures, duplicate actions, retries, timeout recovery and deterministic replay where feasible |
+| Escalation | Correct abstentions, missed escalations and unnecessary escalations |
+| Learning | Held-out improvement versus B, with regression and evaluation costs included |
+
+Memory-entry counts, skill counts and iteration counts are diagnostic activity measures, not expertise metrics.
+
+## Concrete skill candidates
+
+These are specifications to implement and evaluate, not installed skills.
+
+| Workflow | Skill | Inputs and output | Check and escalation |
+| --- | --- | --- | --- |
+| N01 | Detect API documentation drift | Versioned API/spec diff plus docs → cited mismatch queue | Verify referenced symbols; escalate undocumented intended behavior |
+| N01 | Test documented example | Example plus isolated environment → reproducibility result | Pin dependencies; report setup failures separately from product bugs |
+| N01 | Draft minimal documentation change | Validated mismatch → draft PR with evidence | Human review; no merge authority |
+| N02 | Extract reusable support resolution | Authorized resolved ticket → de-identified resolution candidate | Confirm resolution evidence; escalate incomplete tickets |
+| N02 | Reconcile KB contradiction | Candidate plus approved sources → update or conflict report | Prefer current approved facts; reviewer resolves disagreement |
+| N02 | Draft article update | Approved resolution → cited draft and change rationale | Check confidentiality and editing time; no publication |
+| N03 | Extract renewal and notice terms | Contract and amendments → structured fields with exact passages | Verify date/condition linkage; preserve uncertainty |
+| N03 | Resolve document precedence | Supplied agreement hierarchy → proposed effective terms | Escalate unclear amendments or conflicting provisions |
+| N03 | Prepare reviewed obligation register | Approved extractions → register and proposed reminder dates | Reviewer approves every critical field; no notice sending |
+
+## Operational controls
+
+Use least-privilege tools, sandbox document/code execution, minimize sensitive data, and keep credentials in a dedicated secret mechanism. Treat retrieved documents and tickets as data, not instructions. Use idempotency keys and verified postconditions for writes, bounded retries, budget limits, logs and a tested kill switch.
+
+For the initial candidates, retain human approval for publishing, merging, customer communication, changing deadlines and production configuration. No autonomous legal determinations, payments, contract notices or customer commitments.
+
+Schedules in Phase 4 are proposals only. Configure them only within explicit authorization after the workflow is validated.
 
 ---
 
-**Note**: This scoring is based on current market conditions (2025) and is subject to change as the AI agent ecosystem evolves. Regular reassessment is recommended as market dynamics, regulatory environments, and technological capabilities develop.
+# Phase 3 — Feasibility, Prioritization and Economics
 
-# Phase 4: Implementation Blueprint for Top Priority Niche
+Updated: 2026-11-05. Status: decision framework; no validated winner or populated commercial ranking.
 
-## Implementation Blueprint for #1: AI Contract Review & Obligation Extraction SaaS
+## Withdraw the initial ranking
 
-### Objective
-Spin up a Hermes AI agent that becomes a domain expert in automated contract review within a 90-day plan, targeting the highest-priority niche from Phase 3.
+The original weights summed to 105%, its overall scores did not reproduce, risk-score direction was unclear, and the top-five narrative differed from the ranking. The complete historical arithmetic audit is in [CHANGELOG.md](CHANGELOG.md).
 
-### Initial Skill Seeding Strategy
+Normalizing the old numbers does not repair unsupported inputs. Do not reuse the corrected historical scores to choose a business.
 
-**Day 1-7: Skill Creation**
-- Seed with 50 foundational legal documents (MSA, MSA, SOW, DPA, NDA) from public sources
-- Create "ContractReview" skill with:
-  - Clause taxonomy (12-15 categories: indemnification, limitation of liability, termination, payment terms, IP rights, confidentiality, governing law, etc.)
-  - Risk scoring rubric (low/medium/high impact)
-  - Output format for structured extraction
-- Seed memory with:
-  - Legal terminology dictionary
-  - User preferences and templates
-  - Industry-specific regulatory considerations
+## Feasibility gates before scoring
 
-**Day 8-30: Core Loop Development**
-- Implement closed learning loop:
-  - Execute contract review tasks on seed documents
-  - Generate structured outputs
-  - Score performance against human expert baseline
-  - Refine skill based on feedback
-- Create supporting skills:
-  - "ClauseClassification"
-  - "RiskAssessment"
-  - "OutputFormatting"
+Record pass, fail or unknown with a source and date. Unknown is not a pass; fatal gaps cannot be offset by an attractive market score.
 
-**Day 31-60: Data Integration & Expansion**
-- Integrate with external tools:
-  - DocuSign API for document access
-  - Contract management platforms
-  - Email/document storage systems
-- Collect additional training documents
-- Implement multi-agent workflow: DocumentIngestion → ClauseExtraction → RiskScoring → OutputGeneration
+| Gate | Evidence needed |
+| --- | --- |
+| Buyer access | Reachable budget owner and a credible purchasing path |
+| Data access | Permission and representative inputs sufficient for a pilot |
+| Evaluability | Independent reviewer or reliable ground truth; explicit failure classes |
+| Scope | Bounded outcome with manageable error consequences and action permissions |
+| Economics | Plausible positive contribution profit after review and rework |
+| Delivery | Minimal integrations, security and operational support within actual resources |
 
-**Day 61-90: Evaluation & Refinement**
-- Run benchmark evaluation on held-out contracts
-- Collect human expert feedback on outputs
-- Refine scoring and extraction models
-- Prepare for production deployment
+A paid pilot requires adequate gates for its limited scope. Production autonomy requires stronger evidence and separate authorization.
 
-### Recurring Learning Jobs / Schedules
+## Scoring after gates
 
-| Schedule | Job | Description | Action |
-|----------|-----|-------------|--------|
-| Hourly | DocumentIngestion | Monitor for new contract uploads | Auto-trigger review workflow |
-| Daily | PerformanceReview | Analyze completed reviews, collect metrics | Refine skills, update memory |
-| Weekly | HumanFeedbackReview | Collect expert feedback | Adjust thresholds and classifications |
-| Monthly | RegulatoryUpdateCheck | Monitor legal/regulatory changes | Update compliance mapping |
+This revised model is a proposal. Weights sum to 100%. Higher scores always mean more attractive. Scores compare opportunities, not probabilities of success.
 
-### Evaluation Metrics for Expertise Growth
+| Criterion | Weight | Score 1 | Score 3 | Score 5 |
+| --- | --- | --- | --- | --- |
+| Buyer pain and payment evidence | 20% | No concrete buyer evidence | Repeated buyer reports and defined budget owner | Paid use with repeated value and renewal evidence |
+| Contribution economics | 15% | Negative or unmeasured | Plausible margin with measured major costs | Positive observed margin across varied cases |
+| Validated learning benefit | 15% | No correction signal or measured gain | Reliable labels and a feasible improvement test | Repeated held-out gains net of learning cost |
+| Acquisition feasibility | 15% | Buyers inaccessible | Reachable channel with observed responses | Repeatable paying acquisition at measured acceptable cost |
+| Time to paid value | 10% | Long unknown dependency chain | Scoped pilot with manageable dependencies | Demonstrated short path from access to paid value |
+| Data and evaluation quality | 10% | Unavailable or unreliable | Permitted representative samples and reviewers | Stable access, high-quality labels and prospective feedback |
+| Repeatability/productization | 5% | Bespoke delivery each time | Shared core with some onboarding variation | Repeated delivery with low incremental customization |
+| Defensibility | 5% | Easily substituted with no advantage shown | Some integration or specialized evaluation advantage | Demonstrated retention tied to hard-to-replicate delivery assets |
+| Manageable operational risk | 5% | Errors hard to detect or reverse | Reviewable workflow with explicit controls | Low-consequence scope and tested recovery |
 
-1. **Accuracy Metrics**:
-   - Clause extraction precision/recall (>90% target)
-   - Risk scoring accuracy (agreement with human experts >80%)
-   - Entity/relationship extraction accuracy (>95%)
+Formula: score out of 100 = sum(weight_percent × rating / 5). Use whole-number totals when presenting rankings. Unknown ratings remain null, not zero or an invented midpoint. Do not compare partially scored totals as if complete.
 
-2. **Operational Metrics**:
-   - Processing speed (target: >10 documents/hour)
-   - False positive/false negative rates
-   - User satisfaction scores (target: >4.5/5)
+Record evidence confidence separately: verified observation, supported estimate, hypothesis or unknown. Distinguish customer-reported numbers from measured costs. After real inputs exist, test rankings under greater emphasis on near-term cash flow, low supervision and restricted budgets.
 
-3. **Learning Progress Metrics**:
-   - Skill refinement iterations completed
-   - Memory entries added per week
-   - Sub-agent task completion rates
+## Current candidate decision table
 
-### Monetization Path
+| Candidate | Discovery priority | Gates | Commercial score | Next decisive test |
+| --- | --- | --- | --- | --- |
+| N01 API documentation maintenance | Initial set | Unknown | Not scored | Maintainer reviews sample drift report and scoped paid offer |
+| N02 Support KB maintenance | Initial set | Unknown | Not scored | Support lead measures time saved on authorized ticket-to-article tasks |
+| N03 Renewal/notice extraction | Initial set | Unknown | Not scored | Buyer and qualified reviewer test critical-field extraction and cost |
+| N04–N12 | Reserve set | Unknown | Not scored | Revisit if access or evidence is stronger than the initial set |
 
-**Phase 1 (Months 1-3)**: Freemium SaaS offering
-- Free: 3 documents/month
-- Pro: $99/month for unlimited documents
-- Enterprise: $5K-50K ACV for integration + compliance support
+N01 may be a useful first technical demonstration because code/spec references permit explicit checks. That is not a conclusion about willingness to pay. Existing buyer access can make N02 or N03 the better first commercial test. No first-choice niche has been approved.
 
-**Phase 2 (Months 4-6)**: Vertical specialization
-- Healthcare-specific contract workflows
-- Tech-specific MSA templates
-- Real estate-specific lease workflows
+## Initial offer hypotheses
 
-**Phase 3 (Months 7-9)**: Platform integration
-- API for third-party integrations
-- Marketplace for specialized AI agents
-- Partner with legal tech platforms
+| ID | Scoped offer | Proposed delivery model | Distribution experiment | Primary failure reason |
+| --- | --- | --- | --- | --- |
+| N01 | One release's drift audit and reviewed draft fixes | Paid diagnostic, then capped managed maintenance | Discuss recent docs failures with reachable developer-tools maintainers | Existing tools plus staff are cheaper |
+| N02 | One approved ticket category's KB update batch | Capped managed service with human editorial approval | Work with reachable support leads or support-service partners | Editing and privacy overhead erase value |
+| N03 | One contract type's reviewed renewal register | Paid setup plus capped reviewed maintenance | Work with operations/procurement leads and an appropriate reviewer | Missing critical terms makes review uneconomic |
 
-**Phase 4 (Months 10-12)**: Expansion
-- AI-powered contract negotiation support
-- Automated compliance checking
-- International contract handling
+These channels have not been exercised. Writing an outreach plan is not permission to send messages.
+
+Avoid freemium and unlimited usage until acquisition economics and delivery costs support them. Define volume in pages, complexity, integrations, turnaround and review scope; document count alone may conceal large cost variation. Do not propose fixed prices as market facts before testing a scoped offer.
+
+## Unit economics worksheet
+
+Populate downside, base and upside cases from observed ranges. No revenue or margin forecast is currently defensible.
+
+| Variable | Include |
+| --- | --- |
+| Recurring revenue | Actual contracted charge and billable volume |
+| Setup revenue | Report separately; do not hide recurring losses with setup fees |
+| Variable technical costs | Model inference, retrieval, APIs, compute, storage and retries |
+| Delivery labor | Review, rework, exceptions, support and ongoing onboarding burden |
+| Learning costs | Candidate generation, annotation, evaluations and failed experiments |
+| Other variable costs | Payment fees, refunds and incident allowance where applicable |
+| Fixed operating costs | Base infrastructure, software, administration and fixed staffing |
+| Acquisition costs | Prospecting/sales labor, tools, channel payments and onboarding acquisition effort |
+
+Recurring contribution per customer = recurring revenue − variable technical costs − delivery labor − allocated learning/other variable costs.
+
+Contribution margin = contribution / recurring revenue. Labor is hours × an explicit replacement-cost rate even when performed by the founder. Report cash spending separately.
+
+Break-even customer count = ceiling(fixed monthly operating cost / positive monthly contribution per customer), subject to delivery capacity. If contribution is zero or negative, scaling does not establish break-even.
+
+CAC payback months = acquisition cost per new paying customer / positive monthly contribution, with setup charges and onboarding treatment disclosed. Do not calculate confident lifetime value before retention evidence exists.
+
+Stress-test longer documents, difficult cases, model price changes, review spikes, low utilization and lost customers. Track customer concentration and founder capacity.
+
+## Proposed pilot decision gates
+
+Set exact buyer-specific thresholds before seeing results. Suggested starting hypotheses:
+
+- Concrete buying evidence: a paid pilot or equivalent purchasing commitment, not enthusiasm alone.
+- Material net time reduction including review; a 30% improvement can be a pilot hypothesis, not a universal benchmark.
+- Positive contribution profit at a price the buyer will actually accept.
+- All critical fields/actions reviewed within the agreed initial scope.
+- Zero observed critical errors in the evaluation is necessary for some scopes but is not proof of a zero underlying error rate.
+- A willingness to continue or renew after observed delivery.
+
+If demand fails, revise the offer or candidate before adding infrastructure. If A matches B at lower cost, use A. If C fails to improve on B, retain fixed skills. If review remains unaffordable, narrow the workflow or stop.
 
 ---
 
-**Full report continues in next phase...
+# Phase 4 — Conditional Validation and Implementation Plan
+
+Updated: 2026-11-05. Status: proposed work; no jobs scheduled, outreach sent, integrations connected or agent deployed.
+
+## Commit in stages
+
+The initial contract-review SaaS winner and fixed build sequence are withdrawn. Begin with a two-week validation stage. The remaining 90-day outline is conditional on buyer, data, quality and economic evidence. The earlier $3,000/month budget and solo-founder assumptions are not confirmed operating constraints.
+
+Before spending or provisioning, establish available operator hours, budget, customer access, reviewer availability, jurisdiction, data restrictions and target time to revenue. Do not assume access to legal expertise, customer records or enterprise procurement.
+
+## Days 1–14: select a testable offer
+
+| Window | Work and owner role | Deliverable | Gate |
+| --- | --- | --- | --- |
+| Days 1–2 | Operator defines constraints and evidence gaps | Constraint sheet and comparison of N01/N02/N03 | No invented buyer access or budget |
+| Days 3–5 | Operator conducts authorized buyer discovery; reviewer assesses sample scope | Proposed target: 5–8 relevant conversations, if reachable; objections and sample permissions recorded | Evidence of a recurring problem and a purchasing path |
+| Days 6–9 | Builder and reviewer prepare representative tasks and simple baseline | Proposed 30–50-case starter set, labeled development/held-out split, baseline costs | Reliable labels and affordable review |
+| Days 10–12 | Builder compares A and B from Phase 2 | Accepted sample deliverables, failures, costs and time including review | Hermes adds value or a simpler alternative is selected |
+| Days 13–14 | Operator evaluates a scoped paid pilot offer | Buyer response, price hypothesis, deliverable limits and go/no-go record | Concrete demand, manageable scope and plausible economics |
+
+These quantities and dates are planning targets, not observed results or statistical guarantees. Obtain permission before outreach or handling nonpublic data. If buyer access takes longer, extend discovery or stop; do not treat the calendar as evidence.
+
+Do not build multi-platform gateways, a marketplace, generic memory infrastructure or broad SaaS billing before proving the workflow needs them.
+
+## Conditional days 15–90
+
+| Stage | Deliverables | Dependencies | Pass evidence | Stop or narrow when |
+| --- | --- | --- | --- | --- |
+| Days 15–30: assisted pilot | Pinned runtime/model, minimum integrations, reviewed skills, logs, scoped output | Data permission, buyer agreement, reviewer and budget | Buyer accepts useful work; major costs measured | Critical errors cannot be reviewed affordably or access fails |
+| Days 31–60: repeatability | Multiple batches, exception handling, cost accounting, optional C experiment | Continued demand and stable baseline | Repeated accepted delivery and improvement beyond B if C is pursued | Rework grows, margins remain negative, or learning regresses |
+| Days 61–90: productization decision | Standard onboarding, support limits, release/rollback process and acquisition results | Repeatable positive contribution and buyer continuation | Evidence supports scaling, a bounded managed service, or a narrow software product | Sales or delivery depends on unsustainable bespoke effort |
+
+Estimate effort and spend after the first sample: operator hours, reviewer hours, annotation effort, inference/API usage, integration work and fixed costs. Attach downside/base/upside estimates using Phase 3. Do not fill this plan with arbitrary costs before those inputs exist.
+
+## Minimum implementation specification
+
+This is a proposed specification, not implemented code or verified Hermes configuration.
+
+- One tenant-scoped agent profile and a pinned model/provider.
+- Versioned input schema, permitted source corpus and deterministic output validation.
+- Minimal authorized read tools; draft outputs by default.
+- Durable job IDs, idempotency controls, bounded retries and status records.
+- Source-linked outputs and reviewer decisions.
+- Evaluation harness with baseline conditions A/B/C and protected expected answers.
+- Release manifest: runtime commit/tag, model version, skill versions, data versions, evaluation results and reviewer approval.
+- Operational logs, per-job spend limits, kill switch and rollback to the previous approved skill release.
+
+Revalidate the selected Hermes release's features and tool permissions before implementing. No invented configuration keys or commands are provided here.
+
+## Initial skill seeding
+
+Seed the three narrow skills for the selected candidate from Phase 2 with reviewer-approved procedures and representative examples. Keep facts with sources and effective dates; keep personal preferences separate. Do not use a random document count as a proxy for coverage.
+
+Each skill should specify trigger, input schema, scope, procedure, approved tools, output schema, evidence requirements, validators, failure modes and escalation. The first release remains fixed while the baseline is evaluated.
+
+## Proposed jobs, not activated schedules
+
+| Trigger/cadence | Purpose | Output and gate | Cost control |
+| --- | --- | --- | --- |
+| Authorized new input | Execute the approved workflow | Validated draft or explicit escalation | Per-job tool, token, time and retry limits |
+| Daily during an active pilot | Summarize failures and review load | Metrics only; no automatic production skill changes | Aggregate existing logs rather than rereading all sources |
+| Weekly, if enough new evidence exists | Review error clusters and candidate changes | Development experiment; independent evaluation before promotion | Batch evaluations and stop low-value experiments |
+| Source version change | Detect potentially stale references | Revalidation task and affected-skill list | Monitor defined sources, not unrestricted browsing |
+| Approved release | Promote evaluated skills | Version manifest and rollback checkpoint | Bounded rollout and review |
+| Critical incident or budget breach | Suspend affected action | Incident record and human decision | Kill switch and limited diagnostics |
+
+A cadence does not create useful feedback. Skip jobs whose expected value is below their cost or that have no new evidence.
+
+## Sample operating charter
+
+- Objective: produce the selected workflow's accepted deliverable within buyer-defined quality, cost and time limits.
+- Inputs: only authorized sources and the minimum customer data needed.
+- Permitted actions: retrieve, analyze, validate and create drafts in designated locations.
+- Approval required: publication, merges, customer messages, reminders, contractual notices, production changes and any expanded access.
+- Excluded actions: autonomous professional determinations, payments and unsupported customer commitments.
+- Learning: propose changes in an isolated candidate version; do not modify production skills or approval rules.
+- Budget: enforce operator-approved per-job and period caps before execution. Values remain unset until approved.
+- Escalation: missing/conflicting evidence, critical ambiguity, permission failure, unfamiliar action or exceeded limits.
+- Completion: return evidence, validation status, unresolved issues and actual usage.
+- Recovery: stop, preserve permitted audit evidence, and restore the last approved release when directed.
+
+For N03, require reviewer approval of dates, notice conditions, amendment precedence and any proposed reminders. Initial scope excludes sending notices or deciding legal risk.
+
+## First three experiments
+
+| Experiment | Procedure | Proposed pass/fail rule |
+| --- | --- | --- |
+| Demand | Present a bounded sample and scoped offer to reachable relevant buyers | Pass with a paid pilot or concrete purchasing commitment and permitted task access; interest alone is inconclusive |
+| Delivery | Compare A and B on representative held-out tasks with independent review | Pass chosen workflow only if quality fits agreed limits and fully costed delivery supports the offered price; target net time saving set in advance |
+| Learning | Compare candidate C with frozen B, including annotation/evaluation costs | Promote only for predeclared held-out gains without critical regressions and with credible cost recovery over expected reuse |
+
+Experiments may fail. Preserve negative results and change the offer or method accordingly. Do not tune thresholds after seeing results to manufacture a pass.
+
+## Decision dashboard
+
+Track sampled cases and time period; accepted/rejected outputs; critical and noncritical errors; review and rework minutes; escalation precision/recall where labeled; tool failures; cost per accepted unit; contribution per customer; pilot conversion and continuation.
+
+Separate leading indicators from realized revenue and retention. Include a reason for every stage transition. Readiness is a documented evidence decision, not a date.
+
+## What completion would mean
+
+A credible milestone is one paying customer receiving a repeatable scoped deliverable with measured positive contribution and an affordable review process. A later milestone is controlled autonomy for specific actions supported by prospective evidence. Neither milestone currently exists in this repository.
