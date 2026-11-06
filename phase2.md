@@ -1,6 +1,6 @@
 # Phase 2 — Controlled Learning and Bounded Autonomy
 
-Updated: 2026-11-05. Status: proposed architecture; no runtime or expertise benchmark completed.
+Updated: 2026-11-05. Status: offline condition A implemented; Hermes integration and independent expertise evaluation pending.
 
 ## Verified capability versus business claim
 
@@ -96,7 +96,7 @@ Memory-entry counts, skill counts and iteration counts are diagnostic activity m
 
 ## Concrete skill candidates
 
-These are specifications to implement and evaluate, not installed skills.
+These are proposed domain procedures, not installed skills. A repository-local N01 candidate and a limited condition A baseline now exist; neither demonstrates Hermes skill performance.
 
 | Workflow | Skill | Inputs and output | Check and escalation |
 | --- | --- | --- | --- |
@@ -117,3 +117,9 @@ Use least-privilege tools, sandbox document/code execution, minimize sensitive d
 For the initial candidates, retain human approval for publishing, merging, customer communication, changing deadlines and production configuration. No autonomous legal determinations, payments, contract notices or customer commitments.
 
 Schedules in Phase 4 are proposals only. Configure them only within explicit authorization after the workflow is validated.
+
+## Implemented baseline and evaluation limits
+
+[Evaluation instructions](evals/README.md) define an executable condition A for removed operations and newly required parameters absent from structured examples. The runner rejects labels in task inputs, hashes provenance and creates review records. The public 12-case development set is not a private holdout. [Results](results/development-baseline-v1/summary.md) measure field matching only. B/C adapters, independent reviewer labels, real customer examples and runtime promotion remain pending.
+
+Use the [review protocol](pilot/review_protocol.md) to define critical errors, reviewer qualifications and adjudication. Hide condition identity during comparisons when feasible. Change one component at a time; improvements from model, retrieval, prompt and validator changes must not be conflated.

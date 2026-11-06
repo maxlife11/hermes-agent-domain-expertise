@@ -1,0 +1,18 @@
+{
+  "condition": "A",
+  "engine": "normalized-api-drift-v1",
+  "python": "3.12.14",
+  "git_commit": null,
+  "input_sha256": "0cc92016d216ecf95298c472a4122d70ddd9b9092f4489d3f1ecd834552ac067",
+  "engine_sha256": "358e7c969a4890f4c9ee07f6ebf3ad4fcd93d976d142c0f82d0e5b63d76090ae",
+  "runner_sha256": "fef29daf453643ed81a4162c36cd6c4e9e7a1f8cdaa3f78517c644fd42316af8",
+  "case_count": 12,
+  "elapsed_seconds": 6.83230000504409e-05,
+  "external_api_cost_usd": 0,
+  "labor_cost_usd": null,
+  "review_minutes": null,
+  "model": null,
+  "hermes_version": null,
+  "skill_executed": false,
+  "scope": "offline normalized inputs; no network or example execution"
+}

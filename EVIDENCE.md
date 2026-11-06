@@ -49,7 +49,11 @@ Keep raw customer-confidential data outside this public research repository. Ref
 - Dated competitor offers and customer alternatives.
 - Measured inference, integration, review and support costs.
 - Selected upstream version and feature verification.
-- Baseline and held-out evaluations; prospective monitoring.
+- Condition A synthetic baseline completed (E07); independent held-out evaluations and prospective monitoring pending.
 - Domain-specific legal/security review where the selected scope requires it.
 
 No item above is represented as completed.
+
+## E07 — Offline implementation evidence
+
+[Recorded development run](results/development-baseline-v1/summary.md), generated on 2026-11-05 (America/New_York). Condition A checks two rules over normalized synthetic inputs. Five regression tests passed; 12/12 development cases matched expected finding/escalation fields, with six true-positive findings, zero false positives and zero false negatives. Labels were authored during development, not independently reviewed. No inference about generalization, pricing or Hermes learning follows. B/C runs, private holdout and real customer data are still pending. Source hashes and measured machine time appear in the run manifest; human time/cost are unknown.

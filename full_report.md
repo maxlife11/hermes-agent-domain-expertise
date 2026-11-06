@@ -71,11 +71,15 @@ For each finalist record:
 
 Use [EVIDENCE.md](EVIDENCE.md) for provenance. Do not populate unknown fields with invented numbers. Collect no customer-sensitive data without explicit permission and an appropriate handling agreement.
 
+## Execution update
+
+N01 is now the first offline technical experiment, with 12 authored synthetic cases and a deterministic normalized-input baseline. This does not change its unverified commercial confidence or the comparative status of N02/N03. See [pilot scope](pilot/brief.md) and [buyer discovery](pilot/buyer_evidence.md). Buyer access remains unconfirmed.
+
 ---
 
 # Phase 2 — Controlled Learning and Bounded Autonomy
 
-Updated: 2026-11-05. Status: proposed architecture; no runtime or expertise benchmark completed.
+Updated: 2026-11-05. Status: offline condition A implemented; Hermes integration and independent expertise evaluation pending.
 
 ## Verified capability versus business claim
 
@@ -171,7 +175,7 @@ Memory-entry counts, skill counts and iteration counts are diagnostic activity m
 
 ## Concrete skill candidates
 
-These are specifications to implement and evaluate, not installed skills.
+These are proposed domain procedures, not installed skills. A repository-local N01 candidate and a limited condition A baseline now exist; neither demonstrates Hermes skill performance.
 
 | Workflow | Skill | Inputs and output | Check and escalation |
 | --- | --- | --- | --- |
@@ -193,6 +197,12 @@ For the initial candidates, retain human approval for publishing, merging, custo
 
 Schedules in Phase 4 are proposals only. Configure them only within explicit authorization after the workflow is validated.
 
+## Implemented baseline and evaluation limits
+
+[Evaluation instructions](evals/README.md) define an executable condition A for removed operations and newly required parameters absent from structured examples. The runner rejects labels in task inputs, hashes provenance and creates review records. The public 12-case development set is not a private holdout. [Results](results/development-baseline-v1/summary.md) measure field matching only. B/C adapters, independent reviewer labels, real customer examples and runtime promotion remain pending.
+
+Use the [review protocol](pilot/review_protocol.md) to define critical errors, reviewer qualifications and adjudication. Hide condition identity during comparisons when feasible. Change one component at a time; improvements from model, retrieval, prompt and validator changes must not be conflated.
+
 ---
 
 # Phase 3 — Feasibility, Prioritization and Economics
@@ -204,6 +214,12 @@ Updated: 2026-11-05. Status: decision framework; no validated winner or populate
 The original weights summed to 105%, its overall scores did not reproduce, risk-score direction was unclear, and the top-five narrative differed from the ranking. The complete historical arithmetic audit is in [CHANGELOG.md](CHANGELOG.md).
 
 Normalizing the old numbers does not repair unsupported inputs. Do not reuse the corrected historical scores to choose a business.
+
+## Pre-pilot selection: do not require future outcomes
+
+Compare reachable buyer access, repeated problem evidence, permitted sample availability, independent evaluability, implementation effort and error consequences. Record pass/fail/unknown and a next experiment; do not assign speculative commercial totals. Prioritize the cheapest decisive uncertainty reduction. Unknown economics permits an offline measurement experiment, not an unchecked paid production launch.
+
+The technical baseline selects N01 for evaluability without credentials. Commercial selection remains open. The [operator brief](pilot/operator_brief.md) and [buyer evidence protocol](pilot/buyer_evidence.md) collect the missing inputs. Do not use retention, realized margins or measured learning gains as prerequisites to starting discovery.
 
 ## Feasibility gates before scoring
 
@@ -220,9 +236,9 @@ Record pass, fail or unknown with a source and date. Unknown is not a pass; fata
 
 A paid pilot requires adequate gates for its limited scope. Production autonomy requires stronger evidence and separate authorization.
 
-## Scoring after gates
+## Post-pilot scoring after gates
 
-This revised model is a proposal. Weights sum to 100%. Higher scores always mean more attractive. Scores compare opportunities, not probabilities of success.
+This model is for post-pilot comparison, when outcomes can be observed. It must not block initial experiments by requiring future renewal or learning evidence. Weights sum to 100%. Higher scores always mean more attractive. Scores compare opportunities, not probabilities of success.
 
 | Criterion | Weight | Score 1 | Score 3 | Score 5 |
 | --- | --- | --- | --- | --- |
@@ -244,7 +260,7 @@ Record evidence confidence separately: verified observation, supported estimate,
 
 | Candidate | Discovery priority | Gates | Commercial score | Next decisive test |
 | --- | --- | --- | --- | --- |
-| N01 API documentation maintenance | Initial set | Unknown | Not scored | Maintainer reviews sample drift report and scoped paid offer |
+| N01 API documentation maintenance | Offline baseline implemented | Buyer/data/economics unknown | Not scored | Maintainer reviews real-input sample and scoped paid offer |
 | N02 Support KB maintenance | Initial set | Unknown | Not scored | Support lead measures time saved on authorized ticket-to-article tasks |
 | N03 Renewal/notice extraction | Initial set | Unknown | Not scored | Buyer and qualified reviewer test critical-field extraction and cost |
 | N04–N12 | Reserve set | Unknown | Not scored | Revisit if access or evidence is stronger than the initial set |
@@ -301,11 +317,15 @@ Set exact buyer-specific thresholds before seeing results. Suggested starting hy
 
 If demand fails, revise the offer or candidate before adding infrastructure. If A matches B at lower cost, use A. If C fails to improve on B, retain fixed skills. If review remains unaffordable, narrow the workflow or stop.
 
+## Economics status
+
+The offline manifest reports zero external API spend but leaves review time and labor costs null. No human review or normalization effort has been measured. Zero model spend does not mean zero delivery cost. The [review protocol](pilot/review_protocol.md) specifies records needed before contribution profit can be calculated.
+
 ---
 
 # Phase 4 — Conditional Validation and Implementation Plan
 
-Updated: 2026-11-05. Status: proposed work; no jobs scheduled, outreach sent, integrations connected or agent deployed.
+Updated: 2026-11-05. Status: offline technical baseline completed; customer and Hermes work pending. No jobs scheduled, outreach sent, integrations connected or agent deployed.
 
 ## Commit in stages
 
@@ -339,7 +359,7 @@ Estimate effort and spend after the first sample: operator hours, reviewer hours
 
 ## Minimum implementation specification
 
-This is a proposed specification, not implemented code or verified Hermes configuration.
+This remains the proposed runtime specification. A subset now exists as an offline baseline: normalized-input validation, immutable run directories, provenance hashes, reviewer packets and deterministic scoring. No verified Hermes configuration or production release exists.
 
 - One tenant-scoped agent profile and a pinned model/provider.
 - Versioned input schema, permitted source corpus and deterministic output validation.
@@ -404,4 +424,10 @@ Separate leading indicators from realized revenue and retention. Include a reaso
 
 ## What completion would mean
 
-A credible milestone is one paying customer receiving a repeatable scoped deliverable with measured positive contribution and an affordable review process. A later milestone is controlled autonomy for specific actions supported by prospective evidence. Neither milestone currently exists in this repository.
+A credible milestone is one paying customer receiving a repeatable scoped deliverable with measured positive contribution and an affordable review process. A later milestone is controlled autonomy for specific actions supported by prospective evidence. Neither commercial or autonomous milestone currently exists in this repository. An offline development baseline is now available.
+
+## Completed technical increment
+
+See [pilot brief](pilot/brief.md), [evaluation protocol](evals/README.md), [development run](results/development-baseline-v1/summary.md) and [decision log](pilot/decision_log.md). The five regression tests and 12 synthetic cases check plumbing and supported-rule behavior. They do not certify expert performance. CI is configured to repeat these checks; the [release checklist](pilot/release_checklist.md) distinguishes CI from promotion authority.
+
+Next dependencies: operator constraints, buyer access, permitted representative inputs and an independent reviewer. Then pin a Hermes version and add a B adapter only if the baseline comparison warrants it. The candidate procedure has not been installed into a running agent.

@@ -1,6 +1,6 @@
 # Hermes Agent Domain Expertise — Evidence and Validation Plan
 
-Updated: 2026-11-05 (America/New_York). Status: **research hypotheses and proposed experiments; no validated business winner or deployed agent.**
+Updated: 2026-11-05 (America/New_York). Status: **offline baseline implemented; commercial hypotheses unvalidated; no deployed Hermes agent.**
 
 ## Objective
 
@@ -12,11 +12,11 @@ Find one narrow, repeatable digital workflow that customers will pay for, delive
 | --- | --- | --- |
 | Repository review | All six original Markdown files reviewed; arithmetic and completeness defects identified | External validation of commercial claims |
 | Opportunity design | 12 bounded workflow hypotheses; three candidates for initial discovery | Buyer access, task samples, purchasing evidence |
-| Learning design | Baselines, held-out evaluation, promotion and rollback plan | Implemented harness and observed learning gains |
+| Learning and evaluation | Offline condition A runner/scorer, 12 synthetic cases and regression checks | Private holdout, independent review, Hermes B/C adapters and learning gains |
 | Economics | Cost model and decision gates defined | Measured review/support effort, real pricing and retention |
-| Implementation | Conditional two-week and 90-day plan documented | Runtime configuration, integrations, pilots, deployment |
+| Implementation | Narrow API drift baseline, review packets, pilot artifacts and CI configuration | Real-input ingestion, Hermes integration, customer pilot and deployment |
 
-No customer interviews, paid pilots, benchmark runs, or business revenue are documented here. Documentation checks are not agent performance tests.
+A synthetic development run is recorded; no independent benchmark, customer interview, paid pilot or business revenue is established. See [development results](results/development-baseline-v1/summary.md).
 
 ## Read the report
 
@@ -54,3 +54,9 @@ The earlier chat's $3,000/month budget, solo-operator setup, target geography an
 Updating this repository authorizes documentation changes only. The schedules, outreach, integrations and deployments described here are proposals; none has been activated. Keep customer-confidential data, credentials and clinical records out of this repository.
 
 This repository contains research and planning material, not validated legal, medical, financial or underwriting services.
+
+## Run the first technical experiment
+
+The [pilot brief](pilot/brief.md) selects N01 for an offline demonstration only. Follow [evaluation instructions](evals/README.md). Review the [operator brief](pilot/operator_brief.md), [buyer evidence protocol](pilot/buyer_evidence.md), [decision log](pilot/decision_log.md), [review protocol](pilot/review_protocol.md), and [release checklist](pilot/release_checklist.md). The [candidate procedure](skills/check-api-doc-drift/SKILL.md) is repository-local, not an installed Hermes or personal skill.
+
+CI configuration runs document synchronization, regression tests and fixture scoring on pushes and PRs. It does not deploy an agent or enforce commercial acceptance.

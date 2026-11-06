@@ -1,6 +1,6 @@
 # Phase 4 — Conditional Validation and Implementation Plan
 
-Updated: 2026-11-05. Status: proposed work; no jobs scheduled, outreach sent, integrations connected or agent deployed.
+Updated: 2026-11-05. Status: offline technical baseline completed; customer and Hermes work pending. No jobs scheduled, outreach sent, integrations connected or agent deployed.
 
 ## Commit in stages
 
@@ -34,7 +34,7 @@ Estimate effort and spend after the first sample: operator hours, reviewer hours
 
 ## Minimum implementation specification
 
-This is a proposed specification, not implemented code or verified Hermes configuration.
+This remains the proposed runtime specification. A subset now exists as an offline baseline: normalized-input validation, immutable run directories, provenance hashes, reviewer packets and deterministic scoring. No verified Hermes configuration or production release exists.
 
 - One tenant-scoped agent profile and a pinned model/provider.
 - Versioned input schema, permitted source corpus and deterministic output validation.
@@ -99,4 +99,10 @@ Separate leading indicators from realized revenue and retention. Include a reaso
 
 ## What completion would mean
 
-A credible milestone is one paying customer receiving a repeatable scoped deliverable with measured positive contribution and an affordable review process. A later milestone is controlled autonomy for specific actions supported by prospective evidence. Neither milestone currently exists in this repository.
+A credible milestone is one paying customer receiving a repeatable scoped deliverable with measured positive contribution and an affordable review process. A later milestone is controlled autonomy for specific actions supported by prospective evidence. Neither commercial or autonomous milestone currently exists in this repository. An offline development baseline is now available.
+
+## Completed technical increment
+
+See [pilot brief](pilot/brief.md), [evaluation protocol](evals/README.md), [development run](results/development-baseline-v1/summary.md) and [decision log](pilot/decision_log.md). The five regression tests and 12 synthetic cases check plumbing and supported-rule behavior. They do not certify expert performance. CI is configured to repeat these checks; the [release checklist](pilot/release_checklist.md) distinguishes CI from promotion authority.
+
+Next dependencies: operator constraints, buyer access, permitted representative inputs and an independent reviewer. Then pin a Hermes version and add a B adapter only if the baseline comparison warrants it. The candidate procedure has not been installed into a running agent.

@@ -56,3 +56,7 @@ Even normalized values inherit unsupported ratings and unclear risk semantics. T
 The initial commit contained six Markdown documents and no executable agent, evaluation harness or recorded customer results. The combined report was a whitespace-equivalent concatenation of phases 1–4. This does not prove no related work exists outside this repository.
 
 The current revision adds documentation-maintenance tooling only. Passing its checks does not establish commercial validity, domain expertise or runtime readiness.
+
+## 2026-11-05 — Executable pilot foundation
+
+Added an offline normalized API drift baseline, runner/scorer, 12 synthetic development cases, five regression tests, reviewer packets, manifests and CI configuration. Added operator/pilot briefs, buyer discovery, review and release protocols, decision log and repository-local candidate skill. Split pre-pilot discovery from post-pilot scoring to remove circular evidence requirements. Updated all phase documents and regenerated the combined report. Recorded a development run with explicit limits; no customer validation, independent holdout, Hermes adapter, installed skill or operational deployment is claimed.

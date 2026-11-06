@@ -8,6 +8,12 @@ The original weights summed to 105%, its overall scores did not reproduce, risk-
 
 Normalizing the old numbers does not repair unsupported inputs. Do not reuse the corrected historical scores to choose a business.
 
+## Pre-pilot selection: do not require future outcomes
+
+Compare reachable buyer access, repeated problem evidence, permitted sample availability, independent evaluability, implementation effort and error consequences. Record pass/fail/unknown and a next experiment; do not assign speculative commercial totals. Prioritize the cheapest decisive uncertainty reduction. Unknown economics permits an offline measurement experiment, not an unchecked paid production launch.
+
+The technical baseline selects N01 for evaluability without credentials. Commercial selection remains open. The [operator brief](pilot/operator_brief.md) and [buyer evidence protocol](pilot/buyer_evidence.md) collect the missing inputs. Do not use retention, realized margins or measured learning gains as prerequisites to starting discovery.
+
 ## Feasibility gates before scoring
 
 Record pass, fail or unknown with a source and date. Unknown is not a pass; fatal gaps cannot be offset by an attractive market score.
@@ -23,9 +29,9 @@ Record pass, fail or unknown with a source and date. Unknown is not a pass; fata
 
 A paid pilot requires adequate gates for its limited scope. Production autonomy requires stronger evidence and separate authorization.
 
-## Scoring after gates
+## Post-pilot scoring after gates
 
-This revised model is a proposal. Weights sum to 100%. Higher scores always mean more attractive. Scores compare opportunities, not probabilities of success.
+This model is for post-pilot comparison, when outcomes can be observed. It must not block initial experiments by requiring future renewal or learning evidence. Weights sum to 100%. Higher scores always mean more attractive. Scores compare opportunities, not probabilities of success.
 
 | Criterion | Weight | Score 1 | Score 3 | Score 5 |
 | --- | --- | --- | --- | --- |
@@ -47,7 +53,7 @@ Record evidence confidence separately: verified observation, supported estimate,
 
 | Candidate | Discovery priority | Gates | Commercial score | Next decisive test |
 | --- | --- | --- | --- | --- |
-| N01 API documentation maintenance | Initial set | Unknown | Not scored | Maintainer reviews sample drift report and scoped paid offer |
+| N01 API documentation maintenance | Offline baseline implemented | Buyer/data/economics unknown | Not scored | Maintainer reviews real-input sample and scoped paid offer |
 | N02 Support KB maintenance | Initial set | Unknown | Not scored | Support lead measures time saved on authorized ticket-to-article tasks |
 | N03 Renewal/notice extraction | Initial set | Unknown | Not scored | Buyer and qualified reviewer test critical-field extraction and cost |
 | N04–N12 | Reserve set | Unknown | Not scored | Revisit if access or evidence is stronger than the initial set |
@@ -103,3 +109,7 @@ Set exact buyer-specific thresholds before seeing results. Suggested starting hy
 - A willingness to continue or renew after observed delivery.
 
 If demand fails, revise the offer or candidate before adding infrastructure. If A matches B at lower cost, use A. If C fails to improve on B, retain fixed skills. If review remains unaffordable, narrow the workflow or stop.
+
+## Economics status
+
+The offline manifest reports zero external API spend but leaves review time and labor costs null. No human review or normalization effort has been measured. Zero model spend does not mean zero delivery cost. The [review protocol](pilot/review_protocol.md) specifies records needed before contribution profit can be calculated.

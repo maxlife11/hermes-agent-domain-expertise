@@ -61,3 +61,7 @@ For each finalist record:
 - Contradictory evidence, freshness requirements and the next cheapest uncertainty-reducing test.
 
 Use [EVIDENCE.md](EVIDENCE.md) for provenance. Do not populate unknown fields with invented numbers. Collect no customer-sensitive data without explicit permission and an appropriate handling agreement.
+
+## Execution update
+
+N01 is now the first offline technical experiment, with 12 authored synthetic cases and a deterministic normalized-input baseline. This does not change its unverified commercial confidence or the comparative status of N02/N03. See [pilot scope](pilot/brief.md) and [buyer discovery](pilot/buyer_evidence.md). Buyer access remains unconfirmed.

@@ -1,0 +1,11 @@
+{
+  "cases": 12,
+  "exact_cases": 12,
+  "true_positive": 6,
+  "false_positive": 0,
+  "false_negative": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "escalation_exact_cases": 12,
+  "limitations": "Field matching only; evidence correctness, criticality and usefulness require review."
+}

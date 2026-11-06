@@ -22,7 +22,9 @@ def render():
 
 def check_local_links():
     errors = []
-    for path in ROOT.glob("*.md"):
+    for path in ROOT.rglob("*.md"):
+        if any(part.startswith(".") or part == "private-data" or part.startswith("local-") for part in path.relative_to(ROOT).parts):
+            continue
         for target in re.findall(r"\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
             if "://" in target or target.startswith(("#", "mailto:")):
                 continue
