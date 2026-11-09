@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "domain": "N01 API documentation drift",
+  "basket_version": "n01-normalized-dev-1",
+  "evidence_class": "synthetic_development",
+  "weights_basis": "Illustrative equal family weights; not observed customer demand",
+  "minimum_basis": "Five cases per family is a wiring gate only, not statistical sufficiency",
+  "supported": ["removed operation", "new required parameter", "unknown operation escalation"],
+  "unsupported": ["OpenAPI parsing", "prose comprehension", "executing examples", "semantic patch safety", "production tool use"],
+  "strata": [
+    {"id": "operation-removal", "weight": 0.3333333333333333, "minimum_cases": 5, "case_ids": ["removed", "unused-removed"]},
+    {"id": "parameter-changes", "weight": 0.3333333333333333, "minimum_cases": 5, "case_ids": ["new-required", "already-updated", "required-removed", "two-required", "partially-updated", "injection-as-reference"]},
+    {"id": "scope-and-negative-controls", "weight": 0.3333333333333333, "minimum_cases": 5, "case_ids": ["unchanged", "unknown-operation", "existing-missing-out-of-scope", "new-operation-escalates"]}
+  ]
+}

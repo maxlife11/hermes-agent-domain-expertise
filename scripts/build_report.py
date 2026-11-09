@@ -12,7 +12,7 @@ HEADER = (
     "> Run: python3 scripts/build_report.py\n\n"
     "Status: hypotheses and proposed validation; no validated business winner.\n\n"
     "See [README](README.md), [evidence register](EVIDENCE.md) and "
-    "[revision record](CHANGELOG.md).\n\n"
+    "[revision record](CHANGELOG.md), and [benchmark methodology](INDEX.md).\n\n"
 )
 
 def render():
@@ -31,6 +31,10 @@ def check_local_links():
             local = target.split("#", 1)[0]
             if local and not (path.parent / local).exists():
                 errors.append(f"{path.name}: missing local link {target}")
+    for name in PHASES:
+        headings = re.findall(r"^## .+$", (ROOT / name).read_text(), re.MULTILINE)
+        if len(headings) != len(set(headings)):
+            errors.append(f"{name}: duplicate second-level headings")
     return errors
 
 def main():

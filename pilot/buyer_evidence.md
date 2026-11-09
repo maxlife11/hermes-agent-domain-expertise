@@ -11,3 +11,7 @@ Evidence ladder: interview interest → sample permission → scoped offer discu
 First offer to test: one release's documentation drift audit with source-linked findings and reviewer-approved correction proposals. Price and turnaround remain unset pending effort measurements and buyer discussion.
 
 Outreach requires explicit recipient/message authorization. Customer identities, private artifacts and interview transcripts belong in authorized private storage, not this repository.
+
+## Benchmark alignment — 2026-11-09
+
+Use the [canonical methodology](../INDEX.md), [domain contracts](../benchmarks/DOMAIN_SPECS.md) and [rollout](../benchmarks/ROADMAP.md). Current [v2 evidence](../results/development-baseline-v2/summary.md) is synthetic development only; human acceptance and commercial value remain unknown. Historical entries above are retained, not evidence of current promotion. Private labels must remain outside specialist access; benchmark changes require a version break.

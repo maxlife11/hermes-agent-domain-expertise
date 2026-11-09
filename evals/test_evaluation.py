@@ -17,24 +17,42 @@ class EvaluationTests(unittest.TestCase):
 
     def test_authored_development_expectations(self):
         outputs = {cid: analyze(c) for cid, c in self.cases.items()}
-        result = score(outputs, self.labels)
+        result = score(outputs, self.labels, self.cases)
         self.assertEqual(result['exact_cases'], 12)
         self.assertEqual(result['false_positive'], 0)
         self.assertEqual(result['false_negative'], 0)
 
     def test_scorer_detects_false_positives_and_misses(self):
         outputs = {cid: analyze(c) for cid, c in self.cases.items()}
-        extra = copy.deepcopy(outputs['new-required']['findings'][0])
         outputs['new-required']['findings'] = []
-        outputs['unchanged']['findings'] = [extra]
-        result = score(outputs, self.labels)
-        self.assertEqual(result['false_positive'], 1)
+        outputs['new-required']['status'] = 'no_supported_drift'
+        result = score(outputs, self.labels, self.cases)
         self.assertEqual(result['false_negative'], 1)
-        self.assertEqual(result['exact_cases'], 10)
+        self.assertEqual(result['exact_cases'], 11)
+        labels = copy.deepcopy(self.labels)
+        labels['removed']['findings'] = []
+        result = score(outputs, labels, self.cases)
+        self.assertEqual(result['false_positive'], 1)
+
+    def test_corrupted_evidence_source_status_and_proposal_rejected(self):
+        for field, value in [('source', 'invented'), ('status', 'approved'),
+                             ('evidence', {}), ('proposal', 'Publish immediately')]:
+            with self.subTest(field=field):
+                outputs = {cid: analyze(c) for cid, c in self.cases.items()}
+                target = outputs['removed'] if field in ('source', 'status') else outputs['removed']['findings'][0]
+                target[field] = value
+                with self.assertRaises(ValueError):
+                    score(outputs, self.labels, self.cases)
+
+    def test_duplicate_escalation_rejected(self):
+        outputs = {cid: analyze(c) for cid, c in self.cases.items()}
+        outputs['unknown-operation']['escalations'] *= 2
+        with self.assertRaises(ValueError):
+            score(outputs, self.labels, self.cases)
 
     def test_missing_case_rejected(self):
         with self.assertRaises(ValueError):
-            score({}, self.labels)
+            score({}, self.labels, self.cases)
 
     def test_unsupported_schema_rejected(self):
         c = copy.deepcopy(self.cases['unchanged'])

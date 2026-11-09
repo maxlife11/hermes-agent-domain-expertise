@@ -9,6 +9,10 @@ The command creates review.md and reviews.jsonl beside outputs and manifest. The
 5. Escalate disputed intended behavior to a maintainer. Record disagreement and adjudication rather than averaging away critical errors.
 6. A second model can assist triage but cannot alone establish independent ground truth.
 7. Accept only when evidence is accurate and the proposal does not invent values or replacement operations. No automatic merge/publish.
-8. Sum review, rework, setup and support effort for delivery economics. The machine scorer checks finding fields only.
+8. Sum review, rework, setup and support effort for delivery economics. The current machine scorer also checks source/evidence consistency, status and fixed proposal templates against normalized inputs; independent source truth and semantic acceptance remain human-review responsibilities.
 
 Reviewer records are not yet populated. The synthetic expected labels were authored during development; they are not independent expert judgments.
+
+## Benchmark alignment — 2026-11-09
+
+Use the [canonical methodology](../INDEX.md), [domain contracts](../benchmarks/DOMAIN_SPECS.md) and [rollout](../benchmarks/ROADMAP.md). Current [v2 evidence](../results/development-baseline-v2/summary.md) is synthetic development only; human acceptance and commercial value remain unknown. Historical entries above are retained, not evidence of current promotion. Private labels must remain outside specialist access; benchmark changes require a version break.

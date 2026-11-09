@@ -7,7 +7,7 @@ From repository root:
 ```sh
 python3 -m unittest discover -s evals -p 'test_*.py' -v
 python3 -m evals.run --cases evals/fixtures/cases.jsonl --out results/local-demo
-python3 -m evals.score --outputs results/local-demo/outputs.jsonl --labels evals/fixtures/labels.jsonl --require-exact
+python3 -m evals.score --outputs results/local-demo/outputs.jsonl --labels evals/fixtures/labels.jsonl --cases evals/fixtures/cases.jsonl --require-exact
 ```
 
 Choose a new output directory for each run: existing runs are never overwritten. Only synthetic sanitized results should be committed. Local customer data belongs outside this repository in approved storage.
@@ -27,7 +27,7 @@ Public cases.jsonl and labels.jsonl are development fixtures. They cover removal
 
 Each run emits outputs.jsonl, manifest.json, review.md and initially unfilled reviews.jsonl. Manifest records input/runner/engine hashes, Python, available Git revision, elapsed machine time and explicit unknown labor/review costs. External API cost is zero for this offline baseline; total delivery cost is unknown.
 
-score.py requires exact case-ID coverage and rejects duplicate output findings. It reports TP/FP/FN, precision/recall (null for undefined denominators), exact cases and escalation agreement. It does not verify prose proposals, evidence authenticity, criticality, business usefulness or reviewer independence.
+score.py requires exact case-ID coverage and rejects duplicate findings/escalations, source/evidence mismatch, inconsistent status and proposals outside fixed safe templates. It reports TP/FP/FN, precision/recall (null when undefined), exact cases and escalation agreement. It validates consistency with supplied normalized inputs, not source truth, general prose quality, criticality, business usefulness or reviewer independence. Optional --report writes hashes for cases, labels, outputs, scorer and input validator. See the [benchmark runner](../benchmarks/README.md) for coverage and longitudinal diagnostics.
 
 Malformed input fails the batch before output creation. No partial result is silently labeled successful. Output directories are immutable by convention; hashes make provenance inspectable but are not tamper-proof signatures.
 

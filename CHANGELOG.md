@@ -60,3 +60,13 @@ The current revision adds documentation-maintenance tooling only. Passing its ch
 ## 2026-11-05 — Executable pilot foundation
 
 Added an offline normalized API drift baseline, runner/scorer, 12 synthetic development cases, five regression tests, reviewer packets, manifests and CI configuration. Added operator/pilot briefs, buyer discovery, review and release protocols, decision log and repository-local candidate skill. Split pre-pilot discovery from post-pilot scoring to remove circular evidence requirements. Updated all phase documents and regenerated the combined report. Recorded a development run with explicit limits; no customer validation, independent holdout, Hermes adapter, installed skill or operational deployment is claimed.
+
+## 2026-11-09 — Domain benchmark foundation after a08deb8
+
+- Replaced the generic index requirement with separate knowledge registry, capability map, benchmark manifest and immutable result ledger. Added per-domain contracts for all 12 workflows and a staged rollout focused on one real deliverable.
+- Added OCPI/ICE primary-source analogy and HELM/τ-bench research references; distinguished measurement design from claims of fungible expertise, independent certification or profit.
+- Added executable N01 development profile/report with fixed task families, coverage gates, descriptive uncertainty, provenance fingerprints and matched comparison checks. Aggregate stays null on the current 2/6/4 family counts; promotion is always false for synthetic development.
+- Hardened the scorer against fabricated source/evidence, inconsistent status, unsafe/non-template proposals and duplicate escalations. This corrects a limitation of our own earlier baseline. General semantic judgment remains unimplemented.
+- Added regression tests for validation corruption, insufficient/missing coverage, invalid weights and incompatible comparisons. Preserved historical v1 artifacts and added a new v2 run without claiming improvement across scoring versions.
+- Removed duplicated Phase 3/4 index insertions and the rule that missing index readiness erases all commercial evidence. Linked the canonical methodology across phases and regenerated the combined report.
+- Retired the non-idempotent insertion helper into a read-only validator; added duplicate-heading checks and benchmark execution to CI. No agent deployment, outreach, paid service, private data ingestion or schedule was activated.

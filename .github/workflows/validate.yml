@@ -15,4 +15,5 @@ jobs:
       - run: python scripts/build_report.py --check
       - run: python -m unittest discover -s evals -p 'test_*.py' -v
       - run: python -m evals.run --cases evals/fixtures/cases.jsonl --out results/local-ci
-      - run: python -m evals.score --outputs results/local-ci/outputs.jsonl --labels evals/fixtures/labels.jsonl --require-exact
+      - run: python -m evals.score --outputs results/local-ci/outputs.jsonl --labels evals/fixtures/labels.jsonl --cases evals/fixtures/cases.jsonl --require-exact
+      - run: python -m benchmarks.report --profile benchmarks/domains/N01.json --cases evals/fixtures/cases.jsonl --labels evals/fixtures/labels.jsonl --outputs results/local-ci/outputs.jsonl --out results/local-ci/benchmark.json

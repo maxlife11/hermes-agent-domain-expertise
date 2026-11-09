@@ -14,3 +14,7 @@ Before a candidate skill/runtime release:
 - Suspend on critical errors, unauthorized actions, exceeded budgets or unreliable dependencies.
 
 CI enforces documentation consistency and the offline baseline's regression checks. It does not implement private evaluation access control, protected branches, runtime rollback or autonomous deployment. Production permissions and protected-branch settings require a separate configured environment.
+
+## Benchmark alignment — 2026-11-09
+
+Use the [canonical methodology](../INDEX.md), [domain contracts](../benchmarks/DOMAIN_SPECS.md) and [rollout](../benchmarks/ROADMAP.md). Current [v2 evidence](../results/development-baseline-v2/summary.md) is synthetic development only; human acceptance and commercial value remain unknown. Historical entries above are retained, not evidence of current promotion. Private labels must remain outside specialist access; benchmark changes require a version break.

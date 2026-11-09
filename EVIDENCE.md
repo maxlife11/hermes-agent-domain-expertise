@@ -57,3 +57,16 @@ No item above is represented as completed.
 ## E07 — Offline implementation evidence
 
 [Recorded development run](results/development-baseline-v1/summary.md), generated on 2026-11-05 (America/New_York). Condition A checks two rules over normalized synthetic inputs. Five regression tests passed; 12/12 development cases matched expected finding/escalation fields, with six true-positive findings, zero false positives and zero false negatives. Labels were authored during development, not independently reviewed. No inference about generalization, pricing or Hermes learning follows. B/C runs, private holdout and real customer data are still pending. Source hashes and measured machine time appear in the run manifest; human time/cost are unknown.
+
+## Benchmark research and implementation — 2026-11-09
+
+| ID | Primary source / observation | Supports | Limitation |
+| --- | --- | --- | --- |
+| E07 | [Ornn OCPI methodology](https://data.ornn.com/methodology), checked 2026-11-09; page dates publication 2026-07-24 | Explicit units, admissible transaction observations and method governance | Analogy only; not evidence of agent expertise or project economics |
+| E08 | [ICE OCPI B200 product specification](https://www.ice.com/products/83050009), checked 2026-11-09 | A specific cash-settled index-linked contract | Does not establish universal first-index or sole-founder claims |
+| E09 | [Stanford HELM introduction](https://crfm.stanford.edu/2022/11/17/helm.html), 2022-11-17, checked 2026-11-09 | Evaluating multiple metrics and making coverage gaps visible | No direct validation of our domain baskets |
+| E10 | [τ-bench paper](https://arxiv.org/abs/2406.12045), 2024-06-17, checked 2026-11-09 | Task-end-state evaluation and repeated-trial reliability | Historical experimental results do not predict this project's performance |
+| E11 | [Prior main snapshot](https://github.com/maxlife11/hermes-agent-domain-expertise/tree/a08deb83c706d1273f39783413f69f6dcabff670) and local reproduction | Duplicate phase sections; generated-report mismatch; original scorer did not validate supporting evidence/proposals | Repo-specific defects, not claims about upstream Hermes |
+| E12 | [v2 run](results/development-baseline-v2/summary.md) and current regression suite | Source-consistency validation, frozen family profile, null aggregate on missing coverage | Synthetic authored data; no independent labels, agent execution, actual reviewer time or commercial outcomes |
+
+The four-record architecture, domain contracts, weights, learning gates and rollout are project proposals informed by these sources, not externally validated standards. Equal family weights and a five-case development minimum are illustrative plumbing settings. No industry percentile, expertise certification or probability of business success is claimed. Original v1 results remain historical; changed scorers require a series break.

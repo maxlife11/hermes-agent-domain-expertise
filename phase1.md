@@ -1,6 +1,6 @@
 # Phase 1 — Workflow Hypotheses and Evidence Requirements
 
-Updated: 2026-11-05. Status: discovery candidates; commercial demand unverified.
+Updated: 2026-11-09. Status: discovery candidates; commercial demand unverified.
 
 ## Scope and correction
 
@@ -10,30 +10,9 @@ Define an opportunity as **buyer + recurring problem + bounded workflow + measur
 
 The original 2025–2027 outlook is not a verified forecast. Future research must distinguish historical observations, current offers, and forecasts, retaining source dates and uncertainty.
 
-## Domain Knowledge Index Requirement
+## Benchmark readiness, scoped to the selected experiment
 
-For each of the 12 workflow hypotheses (N01–N12), the opportunity definition now includes an explicit domain knowledge index requirement: a bounded, source-linked index of domain facts, sources, and gaps must be created before any commercial or autonomy claim can be advanced. The index serves as the knowledge substrate for the agent's learning loop and must be monitored for staleness and coverage.
-
-### Index Requirements per Candidate
-1. Key facts — extracted propositions, sources, effective dates, confidence levels
-2. Covered subtopics — mapping current vs. missing domain aspects
-3. Source registry — authorized data feeds, document repositories, API endpoints with last-verified dates
-4. Refresh schedule — monthly monitoring of staleness, gap detection, accuracy decay metrics
-5. Version history — indexed revisions with changelog and reviewer approval dates
-
-### Monthly Index Health Check
-- Coverage %: proportion of known domain subtopics present
-- Staleness score: average age of indexed source entries vs. freshness target
-- Gap report: newly identified missing domains or outdated entries
-- Accuracy decay: proportion of index entries contradicted by newer authoritative sources
-
-### Index Maintenance Actions
-- Add: new sources discovered during task execution or buyer feedback
-- Update: revise facts when fresh authoritative data exceeds defined confidence threshold
-- Prune: remove entries with no fresh source support beyond X days
-- Escalate: index coverage below Y% or staleness beyond Z days to operator for review
-
-Index entries are scoped to the candidate's bounded workflow and do not expand autonomously. Metadata lives in Hermes memory with source provenance tags.
+Use the [canonical index and benchmark methodology](INDEX.md) and [per-domain contracts](benchmarks/DOMAIN_SPECS.md). All twelve candidates have proposed measurement units; only N01 has an executable synthetic subset. Build a source registry and independent evaluation for the selected workflow, not twelve full knowledge bases in advance. Lack of an index does not erase known buyer evidence; record the specific evaluability gap separately.
 
 ## Candidate inventory
 

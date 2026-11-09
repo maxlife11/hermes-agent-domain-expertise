@@ -19,3 +19,7 @@ Status: selected for an offline technical experiment only; commercial selection 
 - Stop/pivot: existing tooling is sufficient, no buyer access, or review erases the value.
 
 A full OpenAPI parser or LLM adapter should be added only if a permitted real example demonstrates the need. The current implementation tests plumbing and scope, not product-market fit.
+
+## Benchmark alignment — 2026-11-09
+
+Use the [canonical methodology](../INDEX.md), [domain contracts](../benchmarks/DOMAIN_SPECS.md) and [rollout](../benchmarks/ROADMAP.md). Current [v2 evidence](../results/development-baseline-v2/summary.md) is synthetic development only; human acceptance and commercial value remain unknown. Historical entries above are retained, not evidence of current promotion. Private labels must remain outside specialist access; benchmark changes require a version break.

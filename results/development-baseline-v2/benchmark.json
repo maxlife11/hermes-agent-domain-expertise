@@ -1,0 +1,105 @@
+{
+  "domain": "N01 API documentation drift",
+  "basket_version": "n01-normalized-dev-1",
+  "evidence_class": "synthetic_development",
+  "strata": [
+    {
+      "id": "operation-removal",
+      "weight": 0.3333333333333333,
+      "n": 2,
+      "passed": 2,
+      "rate": 1.0,
+      "minimum_cases": 5,
+      "sufficient": false,
+      "wilson_95_descriptive": [
+        0.34237195288961925,
+        1
+      ]
+    },
+    {
+      "id": "parameter-changes",
+      "weight": 0.3333333333333333,
+      "n": 6,
+      "passed": 6,
+      "rate": 1.0,
+      "minimum_cases": 5,
+      "sufficient": true,
+      "wilson_95_descriptive": [
+        0.6096569663469354,
+        0.9999999999999999
+      ]
+    },
+    {
+      "id": "scope-and-negative-controls",
+      "weight": 0.3333333333333333,
+      "n": 4,
+      "passed": 4,
+      "rate": 1.0,
+      "minimum_cases": 5,
+      "sufficient": false,
+      "wilson_95_descriptive": [
+        0.5100999795960008,
+        1
+      ]
+    }
+  ],
+  "status": "insufficient_data",
+  "development_score": null,
+  "promotion_eligible": false,
+  "expertise_level": "not_established",
+  "critical_failure_rate": null,
+  "review_minutes": null,
+  "commercial_value": null,
+  "uncertainty_note": "Intervals describe authored cases under an IID assumption that is not established. They do not estimate real-world expertise. Repeats are not additional independent cases.",
+  "case_outcomes": {
+    "removed": true,
+    "new-required": true,
+    "already-updated": true,
+    "unchanged": true,
+    "required-removed": true,
+    "unknown-operation": true,
+    "two-required": true,
+    "partially-updated": true,
+    "existing-missing-out-of-scope": true,
+    "unused-removed": true,
+    "new-operation-escalates": true,
+    "injection-as-reference": true
+  },
+  "validation": {
+    "cases": 12,
+    "exact_cases": 12,
+    "true_positive": 6,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "escalation_exact_cases": 12,
+    "case_outcomes": {
+      "removed": true,
+      "new-required": true,
+      "already-updated": true,
+      "unchanged": true,
+      "required-removed": true,
+      "unknown-operation": true,
+      "two-required": true,
+      "partially-updated": true,
+      "existing-missing-out-of-scope": true,
+      "unused-removed": true,
+      "new-operation-escalates": true,
+      "injection-as-reference": true
+    },
+    "source_consistency": "passed",
+    "proposal_policy": "safe-template-v1",
+    "human_acceptance": "not_measured",
+    "limitations": "Consistency with supplied normalized inputs only; labels and source truth are not independently certified."
+  },
+  "fingerprints": {
+    "profile": "18a95d957eeb986a3c6cc07714a58f360cbec08f3b8a7882fec9d649807dc116",
+    "cases": "0cc92016d216ecf95298c472a4122d70ddd9b9092f4489d3f1ecd834552ac067",
+    "labels": "d7e33bc6048b32c488aaa4798f2ba909c590e230ca2d272a27edd55e81c8f45c",
+    "outputs": "f98f543aa5c10f6d336b5badf45e13b17b12dcd38553da8698f120f06912e0c5",
+    "scorer": "06a6610f8f7e818a82dc65515745638fd0e3425cc45c2dc16cfb2e6f759780ba",
+    "input_validator": "358e7c969a4890f4c9ee07f6ebf3ad4fcd93d976d142c0f82d0e5b63d76090ae",
+    "reporter": "16e6f50de39173c526549652235376605b0a69a6f1f770c84fb64aa1147348b2"
+  }
+}

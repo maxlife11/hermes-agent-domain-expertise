@@ -1,6 +1,6 @@
 # Phase 2 — Controlled Learning and Bounded Autonomy
 
-Updated: 2026-11-05. Status: offline condition A implemented; Hermes integration and independent expertise evaluation pending.
+Updated: 2026-11-09. Status: offline condition A implemented; Hermes integration and independent expertise evaluation pending.
 
 ## Verified capability versus business claim
 
@@ -94,29 +94,11 @@ Create evaluation cases before iterative skill development. For the first workfl
 
 Memory-entry counts, skill counts and iteration counts are diagnostic activity measures, not expertise metrics.
 
-## Domain Knowledge Index
+## Knowledge, evaluation and agent progression
 
-For each candidate workflow (N01–N12), maintain a domain knowledge index that catalogs:
+[INDEX.md](INDEX.md) separates the agent-readable knowledge registry from evaluator-only answers and immutable result records. Progress means measured task improvement under stable conditions, not memory size or skill count. Use frozen regression tasks, private rotating holdouts and prospective shadow work. Compare fixed-skill B and candidate C against the same budget/source snapshot; preserve a no-learning control. Curator, specialist, evaluator and release reviewer have distinct access boundaries. Self-grading cannot authorize promotion.
 
-1. Key facts — extracted propositions, sources, effective dates, confidence levels
-2. Covered subtopics — mapping current vs. missing domain aspects
-3. Source registry — authorized data feeds, repository docs, API endpoints with last-verified dates
-4. Refresh schedule — monthly monitoring of staleness, gap detection, accuracy decay
-5. Version history — indexed revisions with changelog and reviewer approval dates
-
-### Monthly Index Health Check
-- Coverage %: proportion of known domain subtopics present
-- Staleness score: average age of indexed source entries vs. freshness target
-- Gap report: newly identified missing domains or outdated entries
-- Accuracy decay: proportion of index entries contradicted by newer authoritative sources
-
-### Index Maintenance Actions
-- Add: new sources discovered during task execution or buyer feedback
-- Update: revise facts when fresh authoritative data exceeds defined confidence threshold
-- Prune: remove entries with no fresh source support beyond X days
-- Escalate: index coverage below Y% or staleness beyond Z days to operator for review
-
-Index entries are scoped to the candidate's bounded workflow and do not expand autonomously. Metadata lives in Hermes memory with source provenance tags.
+The [runnable diagnostic](benchmarks/README.md) measures only normalized N01 development cases; no Hermes B/C adapter, protected holdout or independent domain evaluation exists. [Domain contracts](benchmarks/DOMAIN_SPECS.md) specify the missing tasks and judges.
 
 ## Concrete skill candidates
 
@@ -144,6 +126,6 @@ Schedules in Phase 4 are proposals only. Configure them only within explicit aut
 
 ## Implemented baseline and evaluation limits
 
-[Evaluation instructions](evals/README.md) define an executable condition A for removed operations and newly required parameters absent from structured examples. The runner rejects labels in task inputs, hashes provenance and creates review records. The public 12-case development set is not a private holdout. [Results](results/development-baseline-v1/summary.md) measure field matching only. B/C adapters, independent reviewer labels, real customer examples and runtime promotion remain pending.
+[Evaluation instructions](evals/README.md) define an executable condition A for removed operations and newly required parameters absent from structured examples. The runner rejects labels in task inputs, hashes provenance and creates review records. The public 12-case development set is not a private holdout. Historical [v1 results](results/development-baseline-v1/summary.md) measure field matching only. Current [v2 diagnostics](results/development-baseline-v2/summary.md) add source-consistency checks and suppress an aggregate for insufficient coverage. B/C adapters, independent reviewer labels, real customer examples and runtime promotion remain pending.
 
 Use the [review protocol](pilot/review_protocol.md) to define critical errors, reviewer qualifications and adjudication. Hide condition identity during comparisons when feasible. Change one component at a time; improvements from model, retrieval, prompt and validator changes must not be conflated.

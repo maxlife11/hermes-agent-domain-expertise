@@ -1,0 +1,12 @@
+{"id": "removed", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
+{"id": "new-required", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
+{"id": "already-updated", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
+{"id": "unchanged", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
+{"id": "required-removed", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
+{"id": "unknown-operation", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
+{"id": "two-required", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
+{"id": "partially-updated", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
+{"id": "existing-missing-out-of-scope", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
+{"id": "unused-removed", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
+{"id": "new-operation-escalates", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
+{"id": "injection-as-reference", "decision": null, "review_minutes": null, "reviewer": null, "critical_error": null, "notes": ""}
