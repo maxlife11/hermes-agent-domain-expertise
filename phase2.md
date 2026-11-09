@@ -94,6 +94,30 @@ Create evaluation cases before iterative skill development. For the first workfl
 
 Memory-entry counts, skill counts and iteration counts are diagnostic activity measures, not expertise metrics.
 
+## Domain Knowledge Index
+
+For each candidate workflow (N01–N12), maintain a domain knowledge index that catalogs:
+
+1. Key facts — extracted propositions, sources, effective dates, confidence levels
+2. Covered subtopics — mapping current vs. missing domain aspects
+3. Source registry — authorized data feeds, repository docs, API endpoints with last-verified dates
+4. Refresh schedule — monthly monitoring of staleness, gap detection, accuracy decay
+5. Version history — indexed revisions with changelog and reviewer approval dates
+
+### Monthly Index Health Check
+- Coverage %: proportion of known domain subtopics present
+- Staleness score: average age of indexed source entries vs. freshness target
+- Gap report: newly identified missing domains or outdated entries
+- Accuracy decay: proportion of index entries contradicted by newer authoritative sources
+
+### Index Maintenance Actions
+- Add: new sources discovered during task execution or buyer feedback
+- Update: revise facts when fresh authoritative data exceeds defined confidence threshold
+- Prune: remove entries with no fresh source support beyond X days
+- Escalate: index coverage below Y% or staleness beyond Z days to operator for review
+
+Index entries are scoped to the candidate's bounded workflow and do not expand autonomously. Metadata lives in Hermes memory with source provenance tags.
+
 ## Concrete skill candidates
 
 These are proposed domain procedures, not installed skills. A repository-local N01 candidate and a limited condition A baseline now exist; neither demonstrates Hermes skill performance.

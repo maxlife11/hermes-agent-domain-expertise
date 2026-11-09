@@ -49,6 +49,30 @@ Formula: score out of 100 = sum(weight_percent × rating / 5). Use whole-number 
 
 Record evidence confidence separately: verified observation, supported estimate, hypothesis or unknown. Distinguish customer-reported numbers from measured costs. After real inputs exist, test rankings under greater emphasis on near-term cash flow, low supervision and restricted budgets.
 
+## Domain Knowledge Index Feasibility Gate
+
+Prior to scoring any candidate (N01–N12), the following index readiness conditions must be documented:
+
+1. Index exists — a bounded domain knowledge index has been created for the candidate covering key facts, source registry, and initial gaps
+2. Index health measured — coverage %, staleness score, and gap report from the Monthly Index Health Check are on file
+3. Monitoring scheduled — recurring task is defined with responsible reviewer
+
+The index readiness assessment is a gate *before* post-pilot scoring; it does not replace the feasibility gates (buyer access, data access, evaluability, scope, economics, delivery) but operates in parallel. A candidate with strong market signals but no viable index receives "Unknown" on all scored dimensions until index readiness is established.
+
+Index metadata (creation date, reviewer, version, coverage %, staleness score) must be recorded in the same evidence register as other feasibility gate outcomes.
+
+## Domain Knowledge Index Feasibility Gate
+
+Prior to scoring any candidate (N01–N12), the following index readiness conditions must be documented:
+
+1. Index exists — a bounded domain knowledge index has been created for the candidate covering key facts, source registry, and initial gaps
+2. Index health measured — coverage %, staleness score, and gap report from the Monthly Index Health Check are on file
+3. Monitoring scheduled — recurring task is defined with responsible reviewer
+
+The index readiness assessment is a gate *before* post-pilot scoring; it does not replace the feasibility gates (buyer access, data access, evaluability, scope, economics, delivery) but operates in parallel. A candidate with strong market signals but no viable index receives "Unknown" on all scored dimensions until index readiness is established.
+
+Index metadata (creation date, reviewer, version, coverage %, staleness score) must be recorded in the same evidence register as other feasibility gate outcomes.
+
 ## Current candidate decision table
 
 | Candidate | Discovery priority | Gates | Commercial score | Next decisive test |
