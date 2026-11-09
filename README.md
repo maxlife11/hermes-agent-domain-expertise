@@ -31,3 +31,7 @@ python -m benchmarks.report --profile benchmarks/domains/N01.json --cases evals/
 Use a new directory for every run. To regenerate documentation: `python scripts/build_report.py`. CI checks the generated report, links, duplicate phase headings, regression tests and development benchmark execution. The old `add_index_step.py` now only validates; its former string insertion could duplicate content.
 
 The benchmark follows OCPI's useful measurement analogy: bounded units, admissible evidence and versioned methods. Expertise additionally requires multidimensional task evaluation, critical-error gates and independent outcomes. Knowledge accumulation alone is not learning evidence. Public synthetic labels are development aids, never a private test set.
+
+## Public-source increment — 2026-11-09
+
+Selected GitHub REST from [four candidates](datasets/PROJECT_SELECTION.md). Added [16 source-linked development tasks](datasets/github-rest-dev-v1/README.md): 11 added operations, one modified operation and four unchanged inline controls. Labels are provisional and public; no agent score or independent review is claimed. [Human and AI-agent contribution protocol](CONTRIBUTING.md) supports reproducible reviews and challenges through pull requests.

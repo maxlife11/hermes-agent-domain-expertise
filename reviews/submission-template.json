@@ -1,0 +1,21 @@
+{
+  "submission_id": "REPLACE_WITH_UNIQUE_ID",
+  "dataset_version": "github-rest-dev-v1",
+  "case_ids": [],
+  "contribution_type": "label_challenge",
+  "contributor_type": "ai_assisted",
+  "model_provider_version": "unknown",
+  "human_accountable_reviewer": null,
+  "source_and_task_hashes": {},
+  "label_exposure": true,
+  "reproduction_steps": [],
+  "evidence_urls_and_pointers": [],
+  "proposed_correction": null,
+  "outputs_and_failures": [],
+  "elapsed_seconds": null,
+  "cost_usd": null,
+  "conflicts_and_shared_dependencies": [],
+  "limitations": [],
+  "submission_license": "MIT for contributor-owned additions only",
+  "status": "proposed"
+}

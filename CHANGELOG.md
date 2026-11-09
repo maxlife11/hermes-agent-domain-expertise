@@ -70,3 +70,7 @@ Added an offline normalized API drift baseline, runner/scorer, 12 synthetic deve
 - Added regression tests for validation corruption, insufficient/missing coverage, invalid weights and incompatible comparisons. Preserved historical v1 artifacts and added a new v2 run without claiming improvement across scoring versions.
 - Removed duplicated Phase 3/4 index insertions and the rule that missing index readiness erases all commercial evidence. Linked the canonical methodology across phases and regenerated the combined report.
 - Retired the non-idempotent insertion helper into a read-only validator; added duplicate-heading checks and benchmark execution to CI. No agent deployment, outreach, paid service, private data ingestion or schedule was activated.
+
+## 2026-11-09 — First real-source development dataset
+
+Added 16 GitHub REST inline-operation change tasks from two pinned source snapshots with hashes, MIT notice, deterministic builder and provisional labels. All 12 changed operations plus four selected unchanged controls are included. This is a separate structural-analysis dataset, not normalized N01 scoring or proven documentation defects. Added candidate comparison and public human/AI contribution protocol; no reviewers recruited or agent network activated.

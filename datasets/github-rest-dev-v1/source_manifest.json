@@ -1,0 +1,27 @@
+{
+  "dataset_version": "github-rest-dev-v1",
+  "retrieved_on": "2026-11-09",
+  "sources": {
+    "before": {
+      "commit": "f1b7900c19a5672ed37ea63a0e992817c27436f7",
+      "url": "https://raw.githubusercontent.com/github/rest-api-description/f1b7900c19a5672ed37ea63a0e992817c27436f7/descriptions/api.github.com/api.github.com.json",
+      "sha256": "d054ba1febbe91b2984795f92417ae428d9ccca021f755f59d774021622a9b07",
+      "bytes": 14152152
+    },
+    "after": {
+      "commit": "df36add4edaeda9577169ce42ad4b2b756191852",
+      "url": "https://raw.githubusercontent.com/github/rest-api-description/df36add4edaeda9577169ce42ad4b2b756191852/descriptions/api.github.com/api.github.com.json",
+      "sha256": "b8973e498305c0e45891c45a109901f9caf6ecbf8ad0e53404a7947c503e120f",
+      "bytes": 14206638
+    }
+  },
+  "license": "MIT; see UPSTREAM_LICENSE.txt",
+  "scope": "Inline operation objects only; component references not resolved",
+  "selection": "All changed inline operations in this single transition, plus four preselected unchanged controls",
+  "independence": "One repository and transition; highly correlated; public development only",
+  "artifacts_sha256": {
+    "tasks.jsonl": "bcf90a207c9328ed6cc361543d971455db2d1aa143b079908559d85f73427150",
+    "provisional_labels.jsonl": "410a28fa27de450864ecb80fce53917c0ecc3a6118a3b7a6618551dd0be5ec17",
+    "UPSTREAM_LICENSE.txt": "3243761cbac07e6d169a5a2f4e7c25cc544da85248e735df74c3672e055cc87b"
+  }
+}
