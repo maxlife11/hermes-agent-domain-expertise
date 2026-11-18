@@ -4,6 +4,18 @@ Updated: 2026-11-09. Twelve business workflow hypotheses; one deterministic offl
 
 The next step is a reviewer-labeled **real task packet and measured baseline** for one reachable buyer workflow. N01 API documentation is the current technical demonstration. N02 support knowledge maintenance or N03 renewal extraction may be better if buyer/data/reviewer access is stronger.
 
+## Latest GitHub Digest Run
+
+**2026-11-18 — run 0002.** 50 repos covered (19 first-party across maxlife11 + maxlife-symbiostreams, 30 new external, 1 known-repo delta). 30 new repos found. Relevance precision 1.00 (30/30 scored >= 3/5).
+
+Top 3 new repos:
+
+1. [seldonframe/seldonframe](https://github.com/seldonframe/seldonframe) — 5/5. Agent-native business operating layer; closest structural match to a local-business service business run by agents.
+2. [boringmarketer/boring-marketing-skills](https://github.com/boringmarketer/boring-marketing-skills) — 4/5. Drop-in marketing skill pack for Claude/agent runtimes; directly reusable for client acquisition content.
+3. [alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill) — 4/5. Self-evolving skill harness; the closest public analogue to this digest's own self-improvement loop.
+
+Full log: [github-digest/runs/run-0002.md](github-digest/runs/run-0002.md)
+
 | Start here | What it provides |
 | --- | --- |
 | [INDEX.md](INDEX.md) | Canonical knowledge registry, benchmark design, progress metrics, sub-agent boundaries and longitudinal rules |
