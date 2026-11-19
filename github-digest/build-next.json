@@ -1,0 +1,267 @@
+{
+  "schema_version": "1.0",
+  "last_updated_run": "0003",
+  "last_updated_date": "2026-11-19",
+  "note": "Cumulative build-next ranking. Re-ranked every run. Four sub-scores 1-5: relevance (fit to ecosystem), novelty (new idea vs known), effort_inv (inverted effort, 5=quick win), momentum (market/community signal). composite_score = mean, 2dp. Completed/dropped items retained for history.",
+  "items": [
+    {
+      "id": "slb-mcp-server",
+      "title": "Wrap the Support-Local-Businesses API as an MCP server and publish to the MCP Registry",
+      "rationale": "The SLB API (6.4M+ listings) is the portfolio's only unique data asset and it already has an agent card \u2014 the missing half is an MCP tool surface. This run supplied the two design contracts it needs: analyticslegends' per-row citation_url plus explicit population size, and a2ui's declarative rendering so a listing answer can be a card rather than text. The registry is also where 34 of this run's 55 scored candidates came from, so publication is the same channel that feeds discovery.",
+      "source_repos": [
+        "maxlife-symbiostreams/Support-Local-Businesses.com",
+        "analyticslegends/analytics-legends-mcp",
+        "a2uicatalog/a2ui"
+      ],
+      "source_runs": [
+        "0001",
+        "0002",
+        "0003"
+      ],
+      "scores": {
+        "relevance": 5,
+        "novelty": 5,
+        "effort_inv": 3,
+        "momentum": 5
+      },
+      "composite_score": 4.5,
+      "status": "candidate",
+      "last_updated_run": "0003",
+      "run_0003_rationale": "momentum 4\u21925: registry now indexes 1,500 servers and 34 of this run's candidates came from it, so publication reach is proven. Design contracts for citation and rendering now sourced from two repos found this run.",
+      "rank": 1
+    },
+    {
+      "id": "adops-loop-mureo",
+      "title": "Run logly/mureo's /daily-check ad-ops loop against SLB business ad accounts and write results back as campaign health",
+      "rationale": "mureo is the only repo found that closes the loop from ad spend to a reversible, logged action: every proposed bid change goes to action_log with a 7-day observation window and a rollback ready. That is exactly the 'prove the ROI for a local business' motion SLB needs to sell, and it runs local-first so client ad credentials never leave the operator's machine. Pairs with aaron-he-zhu's ROAS auditor gate for the quality bar and adrails' before/after change links for the audit trail.",
+      "source_repos": [
+        "logly/mureo",
+        "aaron-he-zhu/aaron-marketing-skills",
+        "devthomy/adrails-mcp"
+      ],
+      "source_runs": [
+        "0003"
+      ],
+      "scores": {
+        "relevance": 5,
+        "novelty": 5,
+        "effort_inv": 3,
+        "momentum": 4
+      },
+      "composite_score": 4.25,
+      "status": "candidate",
+      "last_updated_run": "0003",
+      "rank": 2
+    },
+    {
+      "id": "lead-finder-integration",
+      "title": "Replace zdor's LinkedIn scraper with licensed enrichment and complete the cold-outreach chain",
+      "rationale": "zdor is the portfolio's only end-to-end CRM write path (scrape \u2192 analyse \u2192 upsert with dedupe) and it is 13 months stale with the most legally exposed technique in the corpus. This run supplied every replacement part: api-blitz for verified work emails and US phones, ahel for official EU business-register identity, emailwarmup-mcp for inbox placement and SPF/DKIM/DMARC gating, and centricai/arvx for per-pair relationship health. The GoHighLevel dedupe/upsert layer is the only piece worth keeping unchanged.",
+      "source_repos": [
+        "maxlife11/zdor",
+        "api-blitz/skills",
+        "ahel-technologies/ahel",
+        "Agent-Operating-System/emailwarmup-mcp",
+        "centricai/arvx-mcp"
+      ],
+      "source_runs": [
+        "0002",
+        "0003"
+      ],
+      "scores": {
+        "relevance": 5,
+        "novelty": 4,
+        "effort_inv": 4,
+        "momentum": 4
+      },
+      "composite_score": 4.25,
+      "status": "candidate",
+      "last_updated_run": "0003",
+      "run_0003_rationale": "momentum 3\u21924: three of the four replacement components were found in this single run, so the chain is now assemblable without further discovery.",
+      "rank": 3
+    },
+    {
+      "id": "agent-playbook-portability",
+      "title": "Package marketingskills + awesome-agent-skills as portable AgentPlaybooks bundles",
+      "rationale": "agentplaybooks bundles persona, SKILL.md skills, MCP servers, AGENTS.md instructions and memory into one record that round-trips across Claude, ChatGPT, Cursor, Codex and Gemini \u2014 including bundled scripts that most skill formats silently drop. The portfolio holds 500+ skills across two repos but ships them one vendor at a time. One playbook installs everywhere, and demonstrations (including LeRobot datasets) turn a text skill into a trainable artefact.",
+      "source_repos": [
+        "matebenyovszky/agentplaybooks",
+        "maxlife11/awesome-agent-skills",
+        "maxlife11/marketingskills"
+      ],
+      "source_runs": [
+        "0003"
+      ],
+      "scores": {
+        "relevance": 5,
+        "novelty": 4,
+        "effort_inv": 4,
+        "momentum": 3
+      },
+      "composite_score": 4.0,
+      "status": "candidate",
+      "last_updated_run": "0003",
+      "rank": 4
+    },
+    {
+      "id": "hermes-plugin-catalog-entry",
+      "title": "Package the GitHub Digest skill itself as a Hermes plugin-catalog entry",
+      "rationale": "Hermes runs a versioned third-party catalog; publishing there gives the digest distribution inside the runtime. This run sharpened the packaging target: agentplaybooks' playbook record is a better unit than a bare plugin entry because it carries the persona, the MCP connections and the instructions together. Raven's harness contract is the interop surface to align with.",
+      "source_repos": [
+        "maxlife11/hermes-agent-domain-expertise",
+        "matebenyovszky/agentplaybooks",
+        "EverMind-AI/Raven"
+      ],
+      "source_runs": [
+        "0002",
+        "0003"
+      ],
+      "scores": {
+        "relevance": 5,
+        "novelty": 4,
+        "effort_inv": 4,
+        "momentum": 3
+      },
+      "composite_score": 4.0,
+      "status": "candidate",
+      "last_updated_run": "0003",
+      "run_0003_rationale": "Packaging unit changed from plugin entry to playbook record; scores unchanged but the deliverable is now better specified.",
+      "rank": 5
+    },
+    {
+      "id": "artefact-verified-gates",
+      "title": "Gate digest run steps on validated artefacts rather than the agent's own completion claim",
+      "rationale": "dynamic-stagegate-harness checks every stage transition against git history, test output or result files \u2014 never against the model's claim of completion \u2014 and hooks block out-of-state actions instead of warning. Applied here, a digest step would be complete only when its output file validates, which is exactly the failure this run's own JSON block is exposed to (asserted counts vs actual summaries).",
+      "source_repos": [
+        "taejeong0416/dynamic-stagegate-harness",
+        "ridsood90/agent-run-monitor"
+      ],
+      "source_runs": [
+        "0003"
+      ],
+      "scores": {
+        "relevance": 4,
+        "novelty": 4,
+        "effort_inv": 4,
+        "momentum": 3
+      },
+      "composite_score": 3.75,
+      "status": "candidate",
+      "last_updated_run": "0003",
+      "rank": 6
+    },
+    {
+      "id": "decision-log-reasonbook",
+      "title": "Adopt a decision log so rejected candidates and their reasons survive across digest runs",
+      "rationale": "reasonbook records decisions and the reasons behind them \u2014 not transcripts \u2014 in local SQLite, and its demo proves the record surviving a Claude Code \u2192 Codex client switch. The digest re-derives the same rejections every run because only accepted repos reach the ledger. Recording 'rejected X because Y' would make the deferred queue and the rejection table cumulative instead of per-run.",
+      "source_repos": [
+        "kneelinghorse/reasonbook",
+        "maxlife11/hermes-agent-domain-expertise"
+      ],
+      "source_runs": [
+        "0003"
+      ],
+      "scores": {
+        "relevance": 4,
+        "novelty": 4,
+        "effort_inv": 5,
+        "momentum": 2
+      },
+      "composite_score": 3.75,
+      "status": "candidate",
+      "last_updated_run": "0003",
+      "rank": 7
+    },
+    {
+      "id": "heartbeat-scheduler",
+      "title": "Replace the cron sprawl in self-improving-agent with a single heartbeat over named subsystems",
+      "rationale": "openamer replaces ~84 cron jobs with one heartbeat over 10 subsystems \u2014 one place to observe, throttle and recover instead of 84 independent failure modes. The user's stack has the same sprawl (aeon skills, digest run, revenue workflow) with no reconciler. aeon's GitHub-Actions runtime is the batch complement: Actions for scheduled work, heartbeat for continuous.",
+      "source_repos": [
+        "openamer/openamer",
+        "maxlife11/self-improving-agent",
+        "maxlife11/aeon"
+      ],
+      "source_runs": [
+        "0003"
+      ],
+      "scores": {
+        "relevance": 5,
+        "novelty": 4,
+        "effort_inv": 3,
+        "momentum": 3
+      },
+      "composite_score": 3.75,
+      "status": "candidate",
+      "last_updated_run": "0003",
+      "rank": 8
+    },
+    {
+      "id": "slb-ontology-layer",
+      "title": "Model the SLB listing schema as a confirmed ontology so agent answers cite definitions instead of guessing",
+      "rationale": "ontopoc's refusal behaviour is the design insight: unconfirmed or stale definitions make the Q&A refuse and explain why, and every definition must be confirmed by a named person. For a 6.4M-listing directory that is the difference between an agent that invents a business category and one that cites a confirmed definition. AGPL-3.0 blocks code reuse, so this is a pattern adoption, not a dependency.",
+      "source_repos": [
+        "Longado/ontopoc",
+        "maxlife-symbiostreams/Support-Local-Businesses.com"
+      ],
+      "source_runs": [
+        "0003"
+      ],
+      "scores": {
+        "relevance": 5,
+        "novelty": 4,
+        "effort_inv": 2,
+        "momentum": 4
+      },
+      "composite_score": 3.75,
+      "status": "candidate",
+      "last_updated_run": "0003",
+      "rank": 9
+    },
+    {
+      "id": "repo-metadata-hygiene",
+      "title": "Add topic tags and enable Issues on the maxlife11 repos that lack them",
+      "rationale": "12/15 maxlife11 repos have Issues disabled and 0/15 carry topic tags. No topic tags means invisible to GitHub topic search, which is one of the two discovery channels this digest runs on. Unchanged from run 0002 \u2014 still the cheapest force-multiplier available, still undone.",
+      "source_repos": [
+        "maxlife11/OpenMinis",
+        "maxlife11/ai-real-estate-ecosystem",
+        "maxlife11/awesome-agent-skills",
+        "maxlife11/marketingskills"
+      ],
+      "source_runs": [
+        "0002",
+        "0003"
+      ],
+      "scores": {
+        "relevance": 4,
+        "novelty": 2,
+        "effort_inv": 5,
+        "momentum": 3
+      },
+      "composite_score": 3.5,
+      "status": "candidate",
+      "last_updated_run": "0003",
+      "rank": 10
+    },
+    {
+      "id": "deferred-repo-queue",
+      "title": "Process the 20 deferred external repos from run 0003 before opening new discovery queries",
+      "rationale": "20 repos scored >= 3 this run and were cut only by the 30-slot cap; they are already qualified, so processing them costs one fetch each and adds gems with zero discovery overhead. Run 0003 also cleared the 44-item backlog inherited from run 0002, so this queue is now current rather than compounded.",
+      "source_repos": [],
+      "source_runs": [
+        "0002",
+        "0003"
+      ],
+      "scores": {
+        "relevance": 4,
+        "novelty": 2,
+        "effort_inv": 5,
+        "momentum": 2
+      },
+      "composite_score": 3.25,
+      "status": "candidate",
+      "last_updated_run": "0003",
+      "run_0003_rationale": "Backlog from run 0002 cleared; queue re-based on this run's 20 deferrals.",
+      "rank": 11
+    }
+  ]
+}
