@@ -6,44 +6,9 @@ The next step is a reviewer-labeled **real task packet and measured baseline** f
 
 ## Latest GitHub Digest Run
 
-**2026-11-18 — run 0002.** 50 repos covered (19 first-party across maxlife11 + maxlife-symbiostreams, 30 new external, 1 known-repo delta). 30 new repos found. Relevance precision 1.00 (30/30 scored >= 3/5).
+**Run 0003 — 2026-11-19** · 55 repos covered (25 first-party + 30 external) · 25 new external repos · relevance precision 0.90 · activity-weighted coverage 226.5
 
-Top 3 new repos:
-
-1. [seldonframe/seldonframe](https://github.com/seldonframe/seldonframe) — 5/5. Agent-native business operating layer; closest structural match to a local-business service business run by agents.
-2. [boringmarketer/boring-marketing-skills](https://github.com/boringmarketer/boring-marketing-skills) — 4/5. Drop-in marketing skill pack for Claude/agent runtimes; directly reusable for client acquisition content.
-3. [alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill) — 4/5. Self-evolving skill harness; the closest public analogue to this digest's own self-improvement loop.
-
-Full log: [github-digest/runs/run-0002.md](github-digest/runs/run-0002.md)
-
-| Start here | What it provides |
-| --- | --- |
-| [INDEX.md](INDEX.md) | Canonical knowledge registry, benchmark design, progress metrics, sub-agent boundaries and longitudinal rules |
-| [Domain contracts](benchmarks/DOMAIN_SPECS.md) | Units, task families, reference evidence and failure classes for N01–N12 |
-| [Benchmark roadmap](benchmarks/ROADMAP.md) | Staged path from synthetic plumbing to supervised paid delivery |
-| [Runnable benchmark](benchmarks/README.md) | Reproducible commands, implemented scope and missing capabilities |
-| [Recorded v2 run](results/development-baseline-v2/summary.md) | 12/12 authored cases pass; aggregate withheld for insufficient coverage; no promotion |
-| [Phase 1](phase1.md), [Phase 2](phase2.md), [Phase 3](phase3.md), [Phase 4](phase4.md) | Candidate workflows, learning controls, economics and conditional implementation |
-| [Combined report](full_report.md) | Generated phase content; edit phase files, then run the generator |
-| [Evidence](EVIDENCE.md), [changes](CHANGELOG.md) | Sources, uncertainty, corrected assumptions and historical audit |
-| [Pilot brief](pilot/brief.md), [operator constraints](pilot/operator_brief.md), [buyer evidence](pilot/buyer_evidence.md) | Missing commercial inputs and experiment boundaries |
-
-## Reproduce locally
-
-Python 3.11+, standard library; no credentials, model spend or network required.
-
-```sh
-python scripts/build_report.py --check
-python -m unittest discover -s evals -p 'test_*.py' -v
-python -m evals.run --cases evals/fixtures/cases.jsonl --out results/local-demo
-python -m evals.score --cases evals/fixtures/cases.jsonl --labels evals/fixtures/labels.jsonl --outputs results/local-demo/outputs.jsonl --require-exact
-python -m benchmarks.report --profile benchmarks/domains/N01.json --cases evals/fixtures/cases.jsonl --labels evals/fixtures/labels.jsonl --outputs results/local-demo/outputs.jsonl --out results/local-demo/benchmark.json
-```
-
-Use a new directory for every run. To regenerate documentation: `python scripts/build_report.py`. CI checks the generated report, links, duplicate phase headings, regression tests and development benchmark execution. The old `add_index_step.py` now only validates; its former string insertion could duplicate content.
-
-The benchmark follows OCPI's useful measurement analogy: bounded units, admissible evidence and versioned methods. Expertise additionally requires multidimensional task evaluation, critical-error gates and independent outcomes. Knowledge accumulation alone is not learning evidence. Public synthetic labels are development aids, never a private test set.
-
-## Public-source increment — 2026-11-09
-
-Selected GitHub REST from [four candidates](datasets/PROJECT_SELECTION.md). Added [16 source-linked development tasks](datasets/github-rest-dev-v1/README.md): 11 added operations, one modified operation and four unchanged inline controls. Labels are provisional and public; no agent score or independent review is claimed. [Human and AI-agent contribution protocol](CONTRIBUTING.md) supports reproducible reviews and challenges through pull requests.
+- **Top Pick of the Day:** [logly/mureo](https://github.com/logly/mureo) — local-first ad-ops crew for Meta/Google Ads with a 7-day observation window and rollback-ready bid changes.
+- **Also 5/5:** [matebenyovszky/agentplaybooks](https://github.com/matebenyovszky/agentplaybooks), [openamer/openamer](https://github.com/openamer/openamer), [argszero/emrg](https://github.com/argszero/emrg), [brcampidelli/chimera-agent](https://github.com/brcampidelli/chimera-agent), [TechDocsStudio/biel-mcp](https://github.com/TechDocsStudio/biel-mcp), [hivecommons/hive](https://github.com/hivecommons/hive), [Longado/ontopoc](https://github.com/Longado/ontopoc), [a2uicatalog/a2ui](https://github.com/a2uicatalog/a2ui).
+- **Build next:** 1) slb-mcp-server (4.5) 2) adops-loop-mureo (4.25) 3) lead-finder-integration (4.25) 4) agent-playbook-portability (4.0) 5) hermes-plugin-catalog-entry (4.0).
+- Full report: [github-digest/runs/run-0003.md](github-digest/runs/run-0003.md) · ranking: [github-digest/build-next.json](github-digest/build-next.json)
