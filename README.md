@@ -6,9 +6,9 @@ The next step is a reviewer-labeled **real task packet and measured baseline** f
 
 ## Latest GitHub Digest Run
 
-**Run 0003 — 2026-11-19** · 55 repos covered (25 first-party + 30 external) · 25 new external repos · relevance precision 0.90 · activity-weighted coverage 226.5
+**Run 0004 — 2026-11-20** · 53 repos covered (23 first-party + 30 external) · 30 new external repos · relevance precision 1.00 · activity-weighted coverage 230.5
 
-- **Top Pick of the Day:** [logly/mureo](https://github.com/logly/mureo) — local-first ad-ops crew for Meta/Google Ads with a 7-day observation window and rollback-ready bid changes.
-- **Also 5/5:** [matebenyovszky/agentplaybooks](https://github.com/matebenyovszky/agentplaybooks), [openamer/openamer](https://github.com/openamer/openamer), [argszero/emrg](https://github.com/argszero/emrg), [brcampidelli/chimera-agent](https://github.com/brcampidelli/chimera-agent), [TechDocsStudio/biel-mcp](https://github.com/TechDocsStudio/biel-mcp), [hivecommons/hive](https://github.com/hivecommons/hive), [Longado/ontopoc](https://github.com/Longado/ontopoc), [a2uicatalog/a2ui](https://github.com/a2uicatalog/a2ui).
-- **Build next:** 1) slb-mcp-server (4.5) 2) adops-loop-mureo (4.25) 3) lead-finder-integration (4.25) 4) agent-playbook-portability (4.0) 5) hermes-plugin-catalog-entry (4.0).
-- Full report: [github-digest/runs/run-0003.md](github-digest/runs/run-0003.md) · ranking: [github-digest/build-next.json](github-digest/build-next.json)
+- **Top Pick of the Day:** [BAISESYSTEMS/GoHyperLevel](https://github.com/BAISESYSTEMS/GoHyperLevel) — self-hosted, MCP-native business OS (CRM, pipelines, inbox, automations) with 340+ MCP tools; the replacement for the GoHighLevel tenant `zdor` writes every scraped lead into.
+- **Also 5/5:** [hmp-dev/heyyumi-mcp](https://github.com/hmp-dev/heyyumi-mcp), [HLIntel/Headron](https://github.com/HLIntel/Headron), [founder-sweep/data-quality-gate-examples](https://github.com/founder-sweep/data-quality-gate-examples), [Gahroot/Komendly](https://github.com/Gahroot/Komendly), [genfeedai/genfeed.ai](https://github.com/genfeedai/genfeed.ai), [minds-ai-co/minds-mcp](https://github.com/minds-ai-co/minds-mcp), [teeoff-technologies/catchmycall-mcp](https://github.com/teeoff-technologies/catchmycall-mcp), [piiklabs/buzzmark-mcp](https://github.com/piiklabs/buzzmark-mcp), [decimal-labs/decimalai-mcp](https://github.com/decimal-labs/decimalai-mcp), [deepscout-ai/deepscout-mcp](https://github.com/deepscout-ai/deepscout-mcp), [egbe-ai/egbe-plugins](https://github.com/egbe-ai/egbe-plugins), [hashgrid-labs/sdk](https://github.com/hashgrid-labs/sdk).
+- **Build next:** 1) slb-mcp-server (4.5) 2) adops-loop-mureo (4.25) 3) lead-finder-integration (4.25) 4) slb-attestation-tier (4.25) 5) hyperlevel-crm-migration (4.0).
+- Full report: [github-digest/runs/run-0004.md](github-digest/runs/run-0004.md) · ranking: [github-digest/build-next.json](github-digest/build-next.json)
